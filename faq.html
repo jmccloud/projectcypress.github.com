@@ -1,0 +1,225 @@
+<!doctype html>
+<meta charset=utf-8>
+<html>
+  <head> 
+    <title>Cypress | Home</title>
+    <!-- Enable IE9 Standards mode -->
+    <meta http-equiv="X-UA-Compatible" content="IE=9" >
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+		<link rel="stylesheet" href="bootstrap/css/bootstrap.css" type="text/css" />
+		<link rel="stylesheet" href="bootstrap/css/bootstrap-responsive.css" type="text/css" />
+		<link rel="stylesheet" href="css/style.css" type="text/css" />
+		<script type="text/javascript" src="js/jquery-1.8.1.js"></script>  
+    <link rel="icon" type="image/png" href="images/cypress.png"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script type="text/javascript">
+
+		  var _gaq = _gaq || [];
+		  _gaq.push(['_setAccount', 'UA-27616365-1']);
+		  _gaq.push(['_trackPageview']);
+
+		  (function() {
+		    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+		    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+		    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+		  })();
+
+		</script>
+  </head>
+  <body class="container">
+  	  <a class="screenreader" href="#content">skip navigation</a> 
+  		<header class="navbar">
+  			<div class="navbar-inner row">
+  			<span class="span4 logo">
+					<a href="#">
+						<img src="images/cypress_logo.png" alt="Cypress" />
+					</a>
+				</span>
+				<div class="span4 external-links">
+					<span class="external-bar">
+						<a href="http://demo.projectcypress.org/"><img src="images/demo.png" alt="Project Cypress Demo" /></a>
+					</span>
+					<span class="external-bar">
+						<a href="https://github.com/ProjectCypress"><img src="images/octocat.png" alt="GitHub Link" /></a>
+					</span>
+				</div>
+			</div>
+			<div class="nav-listing row">
+  			<a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+  					<span class="icon-bar"></span>
+  					<span class="icon-bar"></span>
+  					<span class="icon-bar"></span>
+  			</a>
+      		<div class="nav-collapse collapse">
+						<nav class="span12 nav nav-tabs">
+							<li class=""><img href="images/home.ong"><a href="index.html" id="home">Home</a></li>
+							<li class=""><a href="prog_info.html">Program Information</a></li>
+							<li class="active"><a href="faq.html">FAQ</a></li>
+							<li class=""><a href="contact.html">Contact</a></li>
+						</nav>
+				</div>
+				</div>
+			</div>
+		</header>
+		<div class="container content" id="faq">
+			<a name="content"></a>
+			<div class="row">
+				<div class="span3">
+					<h2>Overview</h2>
+					<ul id="faqHeader">
+						<li><a href="#whatIsCypress"><span>What is Cypress?</span></a></li>
+						<li><a href="#funding"><span>Who is funding Cypress?</span></a></li>
+						<li><a href="#objective"><span>What is the objective of project Cypress?</span></a></li>
+					</ul>
+				</div>
+				<div class="span3">
+					<h2>Workflow</h2>
+					<ul id="faqHeader">
+						<li><a href="#users"><span >Who are the intended users of Cypress?</span></a></li>
+						<li><a href="#conops"><span >What is the basic Concept of Operations for use of Cypress?</span></a></li>
+						<li><a href="#vendors"><span >How can Cypress be used by EHR vendors?</span></a></li>
+						<li><a href="#report"><span >Is Cypress used to report EHR Stage 1 Meaningful Use Clinical Quality Measure data?</span></a></li>
+						<li><a href="#meaningfuluse"><span >Can Cypress be used to demonstrate Stage 1 Meaningful Use?</span></a></li>            
+					</ul>
+				</div>
+				<div class="span3">
+					<h2>Open Source</h2>
+					<ul id="faqHeader">
+						<li><a href="#oss"><span >What does open source software mean?</span></a></li>
+						<li><a href="#contribute"><span>Can I contribute software to Cypress?</span></a></li>
+						<li><a href="#change"><span>Can anyone unilaterally change the Cypress source code?</span></a></li>
+						<li><a href="#communication"><span>How is communication managed on the Cypress project?</span></a></li>
+						<li><a href="#contact"><span>Where can I send questions about Cypress?</span></a></li>
+					</ul>
+				</div>
+				<div class="span3">
+					<h2>Technical Details</h2>
+					<ul id="faqHeader">
+						<li><a href="#standards"><span>What standards does Cypress use?</span></a></li>
+						<li><a href="#pophealth"><span>How is Cypress related to project popHealth?</span></a></li> 
+						<li><a href="#languages"><span>What programming languages does Cypress use?</span></a></li>
+					</ul>
+				</div>	
+			</div>
+			<div class="row">
+				<div class="questionAnswer firstQuestion">
+				<div class="question" id="whatIsCypress"><h2>What is Cypress?</h2></div>
+				<p>Cypress v2 is proposed to be the rigorous and repeatable testing tool of Electronic Health Records (EHRs) and EHR modules in calculating Meaningful Use (MU) Stage 2 Clinical Quality Measures (CQMs).  The Cypress tool is open source and freely available for use or adoption by the health IT community including EHR vendors and testing labs.  Cypress v2 is planned to serve as the official testing tool for the 2014 EHR Certification program supported by the Office of the National Coordinator for Health IT (ONC).</p>
+				</p>
+				</div>
+				<div class="questionAnswer">
+				<div class="question" id="funding"><h2>Who is funding the Cypress project?</h2></div>
+				<p>The Cypress project is being stewarded by The <a href="http://www.mitre.org">MITRE</a> Corporation and is being funded by the Office of the National Coordinator for Health Information Technology (<a href="http://www.healthit.gov">ONC</a>) within the United States Department of Health and Human Services (<a href="http://www.hhs.gov/">HHS</a>). Cypress will go through the same ONC approval process as any other testing tool and should be viewed as a utility to aid in verifying the accuracy of Stage 1 Meaningful Use Clinical Quality Measure calculations.</p>
+				</div>
+				<div class="questionAnswer">
+				<div class="question" id="objective"><h2>What is the objective of Cypress?</h2></div>
+				<p>The objective of Cypress is to enable repeatable and rigorous testing of an EHR's ability to accurately calculate Meaningful Use Stage 2 Eligible Provider (EP) and Eligible Hospital (EH) Clinical Quality Measures. Cypress has been submitted to ONC for approval as the official CQM testing tool for operational use in Meaningful Use Clinical Quality Measure certification.  At this time, Cypress is not intended serve as a complete certification testing tool.  Further instruction and guidance will be forthcoming from ONC once an approved full production version of Cypress is ready. </p>
+				</div>
+				<div class="questionAnswer">
+				<div class="question" id="users"><h2>Who are the intended users of Cypress?</h2></div>
+				<p>Cypress has been designed to support both the EHR vendor and ATL testing community.  Cypress provides both of these types of organizations with a tool to verify the accurate calculation of Stage 1 Meaningful Use Clinical Quality Measures.</p>
+				</div>
+				<div class="questionAnswer">
+				<div class="question" id="conops"><h2>What is basic Concept of Operations for use of Cypress?</h2></div>
+					<p>Cypress is a web-based application that automates the verification of the accuracy calculation Meaningful Use Stage 2 CQMs calculation, and the validity of the various data standards that are dependencies to CQMs.  Cypress may be used in pre-testing mode by EHR vendors.  Cypress will be used in production mode by all Authorized Testing Labs (ATLs). </p>
+					<p>Cypress test data will be presented to EHRs for both the EP and EH tests via interoperable XML standards, or via visual presentation for manual input of the patient-level clinical data.</p>
+					<p>
+					Testing the validity of data standards is provided via the Cypress QRDA Category 1 Test Data.  The Cypress Test Data includes synthetic patient records, designed to exercise all of the MU Stage 2 EP and EH CQMs.  The Cypress Test Data can be used by EHR vendors to generate QRDA Category 1 XML files for each of the EP or EH CQMs.  Cypress will automatically validate and report on errors or warnings associated with these QRDA Category 1 XML files.  
+					</p>
+					<img src="images/System-Fig1.png" alt="System View with QRDA Cat1">
+					<br><br>
+					<p>
+					Testing the accuracy of CQM calculation is provided via the Cypress EP and EH Test Data.  The Cypress EP and EH Test Data was designed to exercise the MU Stage 2 EP and EH CQMs.  The Cypress Test Data is used to generate the scorecards that EHR vendors must meet.  Vendors are able to inspect this test data prior to certification with an Authorized Testing Lab (ATL). </p>
+
+					<img src="images/System-Fig2.png" alt="System View with EH test and EP Test">
+					<br><br>
+					<p>
+					For EP CQM testing by ATLs, Cypress v2.0 will introduce a level of dynamic variability in the patient data at runtime to ensure that EHR systems are accurately supporting.  For EH CQM testing by ATLs, Cypress v2.0 will only provide static testing of the patient-level data.  Dynamic testing of EH CQMs will be addressed at a later release of Cypress after v2.0 has been finalized.
+					</p>
+				</div>
+				<div class="questionAnswer">
+				<div class="questionAnswer">
+				<div class="question" id="vendors"><h2>How can Cypress be used by EHR vendors?</h2></div>
+				<p>Cypress is a free open source tool that is readily available for EHR vendors to download and test their system's ability to accurately calculate Meaningful Use Clinical Quality Measures. Cypress has been designed to make this internal testing and validation process easier for EHR software vendors.  It is unlikely that a vendor would want to integrate the Cypress testing software with their product.</p>
+				</div>
+				<div class="questionAnswer">
+				<div class="question" id="report"><h2>Is Cypress used to report EHR Meaningful Use Clinical Quality Measure data?</h2></div>
+				<p>No. Cypress is designed to test the data calculations that would be used in such a report.  Cypress would ensure that the software used to produce the report is calculating theMeaningful Use Clinical Quality Measures correctly, but is not designed to export the report itself.</p>
+				</div>
+				<div class="questionAnswer">
+				<div class="question" id="meaningfuluse"><h2>Can Cypress be used to demonstrate Meaningful Use?</h2></div>
+				<p>No. Cypress could be a supporting software tool to help test EHR systems and EHR modules for accurate calculation of Meaningful Use Clinical Quality Measures. Eligible health care professionals can qualify for incentive payments under the Meaningful Use program when they adopt certified EHR technology and use it to achieve specified objectives. One of those specified objectives that an eligible provider must meet is to report on Meaningful Use Clinical Quality Measures.</p>
+				</div>
+				<div class="questionAnswer">
+				<div class="question" id="oss"><h2>What does open source software mean?</h2></div>
+				<p>Open source software is a term used to describe software that is available in source code form and is generally free to use.  The source code may be used to study and understand business logic coded into the software product and may also be included in derivative forms of the software product as allowed by the copyright holders.</p>
+				</div>
+				<div class="questionAnswer">
+				<div class="question" id="contribute"><h2>Can I contribute software source code to Cypress?</h2></div>
+				<p></p>
+				<p>Yes. Code contributions, bug fixes, and ideas for new features are all welcome for the Cypress project. A requirement for contributing software is that any and all software contributed to Cypress must be released under an Apache 2.0 open source distribution license, and that you transfer copyright of any code or patches you submit to the project.</p>
+				<p>To submit a new feature or bug fix for consideration into the Cypress repository, setup an account on <a href="https://github.com/"><span >GitHub</span></a>, fork the Cypress code, and create a branch of Cypress on your repository.  Send the link to the Cypress branch to the Cypress <a href="mailto:project-cypress-dev@googlegroups.com"><span >developer email list</span></a>.  In this email, cite either an existing bug or feature from the Cypress project tracker to specify the changes that you are contributing.</p>
+				<p>If you have suggestions on new features, or want to report a bug that has not yet been tracked, send an email to the <a href="mailto:project-cypress-dev@googlegroups.com"><span >developer email list</span></a> with either the details for how to reproduce a bug, or a detailed description about a feature that you would like to see added to Cypress.</p>
+				</div>
+				<div class="questionAnswer">
+				<div class="question" id="change"><h2>Can anyone unilaterally change the Cypress source code?</h2></div>
+				<p>No. If you make changes to your copy of the Cypress code there is no guarantee that the changes will be accepted back to the Cypress project.  This rigor is required to ensure the highest quality of the Cypress software.  Any source code contributions are publicly reviewed and vetted by the Cypress project's governing organizations.</p>
+				<p>Any potential Cypress bug fix or Cypress feature contribution will be vetted by the Cypress project's governing bodies. Code contributions must have quality unit testing coverage that exceeds a 50% threshold, and must have reasonable and mature cyclomatic code complexity.  There is a Ruby code convention requirement that can be found <a href="https://github.com/eedrummer/styleguide/blob/master/ruby.markdown">here</a>.  There is a Google's JavaScript style guide that can be found <a href="http://google-styleguide.googlecode.com/svn/trunk/javascriptguide.xml">here</a>.  The Cypress code attempts to follow these guides as much as possible.  Any contributions should follow these conventions.</p>
+				</div>
+				<div class="questionAnswer">
+				<div class="question" id="communication"><h2>How is communication managed on the Cypress project?</h2></div>
+				<p>The most prominent activities are always published on the project website.  Whenever possible, please make use of our <a href="faq.html" class="selected"><span >FAQ</span></a> section before exploring other communication channels.</p>
+				</div>
+				<div class="questionAnswer">
+				<div class="question" id="contact"><h2>Where do I send questions about Cypress?</h2></div>
+				<p>There are three email distribution lists which may also be used to request information about the project's plans and activities.  These lists are:</p>
+				<ul>
+				<li><a href="http://groups.google.com/group/project-cypress-announcements"><span ><b>project-cypress-announcements@googlegroups.com</b></span></a> - to which anyone can subscribe to.  Messages to this list are limited to the Cypress governing organizations.</li>
+				<li><a href="http://groups.google.com/group/project-cypress-talk"><span ><b>project-cypress-talk@googlegroups.com</b></span></a> - to which anyone can subscribe to.  Additionally, anyone is free to submit questions about the project to this list.  To prevent spam, all messages are first reviewed by the project team before being forwarded to the distribution list.</li>
+				<li><a href="http://groups.google.com/group/project-cypress-dev"><span ><b>project-cypress-dev@googlegroups.com</b></span></a> - is used exclusively for software development questions.  Membership to this list is also open to anyone.  However, we encourage individuals to limit participation in this list to those who are active software engineers.  Likewise, anyone is free to submit questions about the project to this list.  Similarly, to prevent spam, all messages are first reviewed by the project team before being forwarded to the distribution list.</li>
+				</ul>
+				</div>
+				<div class="questionAnswer">
+				<div class="question" id="standards"><h2>What standards does Cypress use?</h2></div>
+				<p>Cypress has been designed to be permissive and support numerous data and transport standards.  Cypress uses the <a href="http://hitsp.org/ConstructSet_Details.aspx?&PrefixAlpha=4&PrefixNumeric=32"><span >HITSP C32</span></a> and <a href="http://www.ccrstandard.com/"><span >ASTM Continuity of Care Record (CCR)</span></a> standard for data input, and the Physician Quality Report Initiative (PQRI) registry XML for reporting output. Cypress is designed to be extensible, supporting multiple standards for both input and output into the future; <a href="http://xml.coverpages.org/CDA-Release2-Unofficial.html" target="_external"><span >CDA documents</span></a>, <a href="http://wiki.hl7.org/index.php?title=Product_CCD"><span >HL7 CCD</span></a>, and the <a href="http://www.astm.org/COMMIT/E31_ConceptPaper.doc"><span >ASTM CCR</span></a>.</p>
+				</div>
+				<div class="questionAnswer">
+				<div class="question" id="pophealth"><h2>How is Cypress related to popHealth?</h2></div>
+				<p>Similar to Cypress, popHealth is another open source healthcare project being supported by the Office of the National Coordinator for Health Information Technology.  Cypress shares some of the same foundational software architecture as <a href="http://projectpophealth.org">popHealth</a>.  Cypress is designed to support the accurate testing of Stage 1 Meaningful Use Clinical Quality Measures.  popHealth is an open source reference implementation for reporting on the results of Stage 1 Meaningful Use Clinical Quality Measures.  popHealth can integrate directly with an Electronic Health Record system to support this, Cypress cannot.  Cypress is designed to test EHR systems and EHR software modules such as popHealth.</p>
+				</div>
+				<div class="questionAnswer">
+				<div class="question" id="languages"><h2>What programming languages does Cypress use?</h2></div>
+				<p>Cypress runs on the <a href="http://rubyonrails.org/">Ruby on Rails</a> open source web application framework.  Cypress uses the <a href="http://www.mongodb.org/">MongoDB</a> open source document database. Developing new software with Cypress, and/or adding new customized features will require non-trivial software development knowledge of both the Ruby and JavaScript programming languages.</p>
+				</div>
+				</div>
+			</div>
+		<footer class="row" id="postscript">
+			<div class="span9">
+				<p>This project was funded by a contract from the <a href="http://www.hhs.gov/healthit/">Office of the National Coordinator for Health Information Technology (ONC)</a>  
+				</p>
+			<p><a href="http://www.hhs.gov/Privacy.html">Privacy Policy</a> <a href="http://www.hhs.gov/Disclaimer.html">Disclaimer</a>
+				</p>
+			</div>
+			<div class="span3">
+				<p>Page Last Revised: Oct 4, 2012
+				</p>
+			</div>
+		</footer>
+        <script type="text/javascript">
+          var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+          document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+        </script>
+        <script type="text/javascript">
+          try {
+            var pageTracker = _gat._getTracker("UA-22970346-1");
+            pageTracker._trackPageview();
+          } catch(err) {}
+       </script>
+	</body>
+  <script src="js/jquery-1.7.2.min.js" type="text/javascript"></script>
+	<script src="bootstrap/js/bootstrap.min.js" type="text/javascript"></script>
+</html>
+

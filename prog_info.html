@@ -1,0 +1,126 @@
+<!doctype html>
+<meta charset="UTF-8" />
+<html>
+  <head> 
+    <title>Cypress | Home</title>
+    <!-- Enable IE9 Standards mode -->
+    <meta http-equiv="X-UA-Compatible" content="IE=9" >
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+		<link rel="stylesheet" href="bootstrap/css/bootstrap.css" type="text/css" />
+		<link rel="stylesheet" href="bootstrap/css/bootstrap-responsive.css" type="text/css" />
+		<link rel="stylesheet" href="css/style.css" type="text/css" />
+		<script type="text/javascript" src="js/jquery-1.8.1.js"></script>  
+    <link rel="icon" type="image/png" href="images/cypress.png"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script type="text/javascript">
+
+		  var _gaq = _gaq || [];
+		  _gaq.push(['_setAccount', 'UA-27616365-1']);
+		  _gaq.push(['_trackPageview']);
+
+		  (function() {
+		    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+		    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+		    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+		  })();
+
+		</script>
+  </head>
+  <body class="container">
+  	<a class="screenreader" href="#content">skip navigation</a> 
+  	<header class="navbar">
+  		<div class="navbar-inner row">
+  			<span class="span4 logo">
+					<a href="#">
+						<img src="images/cypress_logo.png" alt="Cypress Logo" />
+					</a>
+				</span>
+				<div class="span4 external-links">
+					<span class="external-bar">
+						<a href="http://demo.projectcypress.org/"><img src="images/demo.png" alt="Project Cypress Demo" /></a>
+					</span>
+					<span class="external-bar">
+						<a href="https://github.com/ProjectCypress"><img src="images/octocat.png" alt="GitHub Logo and Link" /></a>
+					</span>
+				</div>
+			</div>
+			<div class="nav-listing row">
+  			<a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+  					<span class="icon-bar"></span>
+  					<span class="icon-bar"></span>
+  					<span class="icon-bar"></span>
+  			</a>
+  		
+      	<div class="nav-collapse collapse">
+					<nav class="span12 nav nav-tabs">
+						<li><a href="index.html" id="home">Home</a></li>
+						<li class="active"><a href="prog_info.html">Program Information</a></li>
+						<li><a href="faq.html">FAQ</a></li>
+						<li><a href="contact.html">Contact</a></li>
+					</nav>
+				</div>
+				</div>
+			</div>
+		</header>	
+		<div class="content" id="index">
+			<a name="content"></a>
+			<div class="row">
+				<div class="span6">
+					<h2 class="tag">What is Cypress</h2>
+					<p>Cypress v2 is proposed to be the rigorous and repeatable testing tool of Electronic Health Records (EHRs) and EHR modules in calculating Meaningful Use (MU) Stage 2 Clinical Quality Measures (CQMs).  The Cypress tool is open source and freely available for use or adoption by the health IT community including EHR vendors and testing labs.  Cypress v2 is planned to serve as the official testing tool for the 2014 EHR Certification program supported by the Office of the National Coordinator for Health IT (ONC). 
+					</p>
+				</div>
+				<div class="span6">
+					<h2>CQM certification</h2>
+					<p>CQM certification criteria addressed by Cypress may include:</p>
+					<ul>
+						<li><strong>Export</strong> - the capability of EHR technology to create a data file that can be incorporated by another EHR technology which could be used to calculate CQMs </li>
+						<li><strong>Calculate</strong> - the capability of EHR technology to incorporate data (from other EHR technology where necessary) and correctly calculate the result for CQMs </li>
+						<li><strong>Report</strong> - the capability of EHR technology to create a standard data file that can be electronically accepted by Centers for Medicaid & Medicare Services (CMS)</li>
+					</ul>
+				</div>
+			</div>
+			<div class="row">
+				<div class="span6">
+					<h2>Test data</h2>
+					<p>Currently, the software includes a standard test data of synthetic patient records that exercises all 44 of the Stage 1 MU CQMs.  It is the intention to expand the test data to include Stage 2 MU CQMs.  The test data will be available in a variety of standard formats for input into an EHR system.</p>
+				</div>
+				<div class="span6">
+					<h2>Piloting</h2>
+					<p>Cypress v2 will be alpha and beta piloted with the ONC- Authorized Testing Certification Bodies (ATCBs), Authorized Testing Labs (ATLs) and EHR vendors.  Feedback from these activities will inform future development of the tool.  Additionally, Cypress is planned to provide 4 separate tests in support of CQM certification:</p>
+					<ol>
+						<li>XML Data conformance testing of the Quality Reporting Document Architecture (QRDA) Category 1 standard for individual patient-level data used for CQM calculation</li>
+						<li>XML Data conformance testing of the Quality Reporting Document Architecture (QRDA) Category 3 standard for aggregate reporting of CQM calculation</li>
+						<li>Accuracy calculation testing of the Meaningful Use Stage 2 Eligible Provider (EP) CQMs</li>
+						<li>Accuracy calculation testing of the Meaningful Use Stage 2 Eligible Hospital (EH) CQMs</li>
+					</ol>
+				</div>
+			</div>
+		</div>
+		<footer class="row" id="postscript">
+			<div class="span9">
+				<p>This project was funded by a contract from the <a href="http://www.hhs.gov/healthit/">Office of the National Coordinator for Health Information Technology (ONC)</a>  
+				</p>
+			<p><a href="http://www.hhs.gov/Privacy.html">Privacy Policy</a> <a href="http://www.hhs.gov/Disclaimer.html">Disclaimer</a>
+				</p>
+			</div>
+			<div class="span3">
+				<p>Page Last Revised: Oct 4, 2012
+				</p>
+			</div>
+		</footer>
+		<script type="text/javascript">
+          var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+          document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+        </script>
+        <script type="text/javascript">
+          try {
+            var pageTracker = _gat._getTracker("UA-22970346-1");
+            pageTracker._trackPageview();
+          } catch(err) {}
+       </script>
+	<body>
+</html>
