@@ -67,8 +67,8 @@
 						<li><a href="#users"><span >Who are the intended users of Cypress?</span></a></li>
 						<li><a href="#conops"><span >What is the basic Concept of Operations for use of Cypress?</span></a></li>
 						<li><a href="#vendors"><span >How can Cypress be used by EHR vendors?</span></a></li>
-						<li><a href="#report"><span >Is Cypress used to report EHR Stage 1 Meaningful Use Clinical Quality Measure data?</span></a></li>
-						<li><a href="#meaningfuluse"><span >Can Cypress be used to demonstrate Stage 1 Meaningful Use?</span></a></li>            
+						<li><a href="#report"><span >Is Cypress used to report EHR Meaningful Use Clinical Quality Measure data?</span></a></li>
+						<li><a href="#meaningfuluse"><span >Can Cypress be used to demonstrate Meaningful Use?</span></a></li>            
 					</ul>
 				</div>
 				<div class="span3">
@@ -170,11 +170,11 @@
 				</div>
 				<div class="questionAnswer">
 				<div class="question" id="standards"><h2>What standards does Cypress use?</h2></div>
-				<p>Cypress has been designed to be permissive and support numerous data and transport standards.  Cypress uses the <a href="http://hitsp.org/ConstructSet_Details.aspx?&PrefixAlpha=4&PrefixNumeric=32"><span >HITSP C32</span></a> and <a href="http://www.ccrstandard.com/"><span >ASTM Continuity of Care Record (CCR)</span></a> standard for data input, and the Physician Quality Report Initiative (PQRI) registry XML for reporting output. Cypress is designed to be extensible, supporting multiple standards for both input and output into the future; <a href="http://xml.coverpages.org/CDA-Release2-Unofficial.html" target="_external"><span >CDA documents</span></a>, <a href="http://wiki.hl7.org/index.php?title=Product_CCD"><span >HL7 CCD</span></a>, and the <a href="http://www.astm.org/COMMIT/E31_ConceptPaper.doc"><span >ASTM CCR</span></a>.</p>
+				<p>For testing Clinical Quality Measures, Cypress can generate both <a href="http://wiki.hl7.org/index.php?title=Quality_Reporting_Document_Architecture"><span >HL7 Quality Reporting Document Architecture (QRDA) Category 1</span></a> XML and <a href="http://www.hl7.org/implement/standards/index.cfm?ref=nav"><span >HL7 Consolidated CDA</span></a> XML to represent patient-level data that can be integrated into an EHR system that needs to calculate the results of either an Eligible Professional (EP) or Eligible Hospital (EH) Clinical Quality Measure.  Cypress supports tests that use the <a href="http://wiki.hl7.org/index.php?title=Quality_Reporting_Document_Architecture"><span >HL7 Quality Reporting Document Architecture (QRDA) Category 3 XML standard</span></a> for reporting the aggregate Clinical Quality Measure result output.  Cypress also supports tests using the <a href="http://wiki.hl7.org/index.php?title=Quality_Reporting_Document_Architecture"><span >HL7 Quality Reporting Document Architecture (QRDA) Category 1 XML standard</span></a> for testing the ability of systems to report individual patient-level data as system output for the purposes of calculating Clinical Quality Measure results.
 				</div>
 				<div class="questionAnswer">
 				<div class="question" id="pophealth"><h2>How is Cypress related to popHealth?</h2></div>
-				<p>Similar to Cypress, popHealth is another open source healthcare project being supported by the Office of the National Coordinator for Health Information Technology.  Cypress shares some of the same foundational software architecture as <a href="http://projectpophealth.org">popHealth</a>.  Cypress is designed to support the accurate testing of Stage 1 Meaningful Use Clinical Quality Measures.  popHealth is an open source reference implementation for reporting on the results of Stage 1 Meaningful Use Clinical Quality Measures.  popHealth can integrate directly with an Electronic Health Record system to support this, Cypress cannot.  Cypress is designed to test EHR systems and EHR software modules such as popHealth.</p>
+				<p>Similar to Cypress, popHealth is another open source healthcare project being supported by the Office of the National Coordinator for Health Information Technology.  Cypress shares some of the same foundational software architecture as <a href="http://projectpophealth.org">popHealth</a>.  Cypress is designed to support the accurate testing of Meaningful Use Clinical Quality Measures.  popHealth is an open source reference implementation for reporting on the results of Meaningful Use Clinical Quality Measures.  popHealth can integrate directly with an Electronic Health Record system to support this, Cypress cannot.  Cypress is designed to test EHR systems and EHR software modules such as popHealth.</p>
 				</div>
 				<div class="questionAnswer">
 				<div class="question" id="languages"><h2>What programming languages does Cypress use?</h2></div>
@@ -190,7 +190,7 @@
 				</p>
 			</div>
 			<div class="span3">
-				<p>Page Last Revised: Oct 16, 2012
+				<p>Page Last Revised: Oct 18, 2012
 				</p>
 			</div>
 		</footer>
