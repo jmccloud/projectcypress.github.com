@@ -59,6 +59,20 @@
 					<p>To attend the audio-only teleconference forum:<br/>
 					Dial: <b>703-983-6338</b><br/>
 					Provide Meeting ID: <b>542622</b></p>
+					<br/>
+					<p><b><u>UPDATE</u></b>: On Monday November 26th, ONC held an open forum with stakeholders to discuss the use of the QRDA Category 1 XML format in rather than the Consolidated CDA (CCDA) XML format for exporting patient-level data from the Cypress v2.0 software for Electronic Health Record (EHR) systems.  The discussion on the use of these standards was in context of testing and certification of Clinical Quality Measures (CQMs) for Stage 2 of the CMS Meaningful Use Incentive program and the 2104 Edition of the ONC EHR certification program.</p>
+					<p>The issues precipitating this conversation regard the CCDA XML standard's inability to completely express clinical attributes to exercise and test the MU Stage 2 Eligible Professional (EP) and Eligible Hospital (EH) CQM logic.  Some examples of these issues include ambiguity and/or gaps in the CCDA for expressing clinical attributes such as facility location, negation rationale, severity of diagnosis, transfer of hospital.  These and additional concepts are part of the MU Stage 2 EP and EH CMQ logic, and are either ambiguous or not supported in the CCDA XML standard.  XML data validation issues were also identified when using the CCDA against the newly developed Cypress v2.0 patient test data.  These synthetic Cypress v2.0 patient records are required for testing and certifying EHR systems' ability to generate accurate calculate for MU Stage 2 EP and EH CQMs.</p>
+					<p>To resolve these issues with the CCDA XML standard's use in Cypress v2.0, the proposal was made to eliminate the CCDA for sending patient-level data for automated  import from Cypress to EHR systems, and replace the CCDA with the QRDA Category 1 XML.   The sole use of the QRDA Category 1 XML standard would be a change from the previously communicated plans for the Cypress v2.0 project.</p>
+					<p>Feedback from the vendor and EHR testing communities was collected during the open forum.  The majority of feedback supported the notion that it would be more  desirable for vendors to work with single XML format for patient level data with Cypress v2.0.  Participants also agreed that using the CCDA XML to express all clinical data needed to exercise the EP and EH CQM logic would be challenging.  With the QRDA Category 1 XML standard already established in the "Capture and Export" test criterion, the more feasible QRDA Category 1 XML format was viewed as a the most appropriate approach.</p>
+					<p>Based on:</p>
+					<ul>
+						<li>* The recommendation to use a more interoperable XML standard for sending patient-level data to EHR systems;</li>
+						<li>* The need simply the MU Stage 2 testing process for CQMs by using one XML standard for patient-level data; and</li>
+						<li>* The broader community's feedback collected during this open forum,</li>
+					</ul>
+					<p>the QRDA Category 1 XML standard will be the sole mechanism in Cypress v2.0 for importing the patient-level data for testing the "Import and Calculate" tests on January 2nd, 2013.</p>
+					<p>The original visual presentation of patient data via an HTML view will remain in Cypress v2.0.  This support is needed by vendors who will manually enter the patient test records. The ability to download patient-level data in the CCDA, HITSP C32, and ASTM CCR XML formats will be unavailable in Cypress v2.0 as of January 2nd 2013.
+					<p>Should you have any other questions, please feel free to let us know at <a href="mailto:talk@projectcypress.org">talk@projectcypress.org</a>
 				</div>
 			</div>
 		</div>
