@@ -82,7 +82,23 @@
 							</ul>
 						</li>
 						<li>&nbsp;</li>
-						<li>&nbsp;</li>					
+						<li>&nbsp;</li>
+						<li>EH Measure Updates
+							<ul>
+								<li>&nbsp;&nbsp;&nbsp;&nbsp;CMS178v1, NQF 0453—SCIP-INF-9-- Urinary catheter removed on Postoperative Day 1 (POD 1) or Postoperative Day 2 (POD 2) with day of surgery being day zero—This measure intends to look at patients with a catheter in place postoperatively, but the logic  specified catheters “placed postoperatively”. The logic is changed so that either that the catheter is placed before the end of the procedure, or at some time after the end of the procedure.   </li>
+								<li>&nbsp;&nbsp;&nbsp;&nbsp;CMS 32v1, NQF 0496-- ED-3- Median Time from ED Arrival to ED departure for Discharged ED patients.—Header updated to eliminate requirement for missing data reporting and correct reporting period.</li>
+								<li>&nbsp;&nbsp;&nbsp;&nbsp;CMS 111v1, NQF 0497—ED2-- Admit decision time to ED departure time for admitted patients-- Header updated to eliminate requirement for missing data reporting and correct reporting period.</li>
+								<li>&nbsp;&nbsp;&nbsp;&nbsp;CMS 55v1, NQF 0495—ED1-- Median time from ED arrival to ED departure for admitted ED patients Description-- Header updated to eliminate requirement for missing data reporting and correct reporting period.</li>
+								<li>&nbsp;&nbsp;&nbsp;&nbsp;CMS 71v1, NQF 0436—STK-3-- Anticoagulation Therapy for Atrial Fibrillation/Flutter— This measure requires a diagnostic study result of atrial fib/flutter but logic did not include a value set to define the diagnostic study, only the result.  A value set for the diagnostic study was added. </li>
+								<li>&nbsp;&nbsp;&nbsp;&nbsp;CMS 91v1, NQF 0437—STK-4-- Ischemic stroke – Thrombolytic Therapy-- Logic should show therapy provided in the ED would not exclude the patient from the measure and is changed to include treatment provided during ³Occurrence A of Encounter, Performed: Emergency Department Visit (facility location arrival date time)². </li>
+								<li>&nbsp;&nbsp;&nbsp;&nbsp;CMS 171v1, NQF 0527— SCIP-INF-1 Prophylactic Antibiotic Received within 1 Hour Prior to Surgical Incision—Antibiotics were joined in the numerator with “AND” rather than “OR”, requiring the patient to be on all ten antibiotics simultaneously to satisfy the measure, therefore the logic was changed to correct this error.</li>
+								<li>&nbsp;&nbsp;&nbsp;&nbsp;CMS 172v1, NQF 0528— SCIP-INF-2-- Prophylactic Antibiotic Selection for Surgical Patients-- Header updated to eliminate requirement for missing data reporting and correct reporting period.</li>
+								<li>&nbsp;&nbsp;&nbsp;&nbsp;CMS 30v1, NQF 0639— Value set coding for LDLc using SNOMED codes was replaced  to harmonize the value set for LDLc using LOINC codes with the value set from measure CMSv1, NQF 0439. Both measures now use the same value set. The measure previously used the admission datetime rather than the inpatient discharge datetime. The measure logic was updated to reflect the correct datetime. </li>
+								<li>&nbsp;&nbsp;&nbsp;&nbsp;CMS 188v1, NQF 0147-- PN-6- Initial Antibiotic Selection for Community-Acquired Pneumonia (CAP) in Immunocompetent Patients-- The denominator exclusions included a duplicate statement about Transfer From: Hospital Measures – Ambulatory surgical center. The duplicate statement was to reflect transfer from an acute care hospital. The measure also incorrectly used a datetime attribute with a value set on medication routes, so the value set was updated to reflect the correct route attribute. The header was also updated to reflect that missing data does not require reporting.</li>
+							</ul>
+						</li>
+						<li>&nbsp;</li>
+						<li>&nbsp;</li>			
 						<li>Overarching thematic changes in the CQMs
 							<ul>
 								<li>&nbsp;&nbsp;&nbsp;&nbsp;CQM Exceptions</li>
