@@ -1,0 +1,153 @@
+footer {
+  margin-top: 40px;
+  background-color: #eee;
+
+  .span9 {
+    margin-left: 0;
+  }
+}
+
+.navbar .btn-navbar, .nav-listing .btn-navbar {
+    display: none;
+}
+
+/* menu reduced---------------------------------------------------------*/
+
+@media (max-device-width: 1024px) {
+  
+  .nav-collapse .dropdown-menu:before,
+  .nav-collapse .dropdown-menu:after {
+    display: none;
+  }
+  .nav-collapse .dropdown-menu .divider {
+    display: none;
+  }
+  .navbar .btn-navbar {
+    display: block;
+  }
+}
+
+@media (max-width:979px) {
+  .navbar-static-top .container {
+    width: auto;
+  }
+  .nav-collapse {
+    display: block;
+    width: 100%;
+  }
+  .navbar .btn-navbar, .nav-listing .btn-navbar {
+    display: inline-block;
+    float: right;
+  }
+  .nav-collapse, .nav-collapse.collapse {
+    height: 0;
+    overflow: hidden;
+  }
+
+  [class^="icon-"], [class*=" icon-"] {
+    display: block;
+    width: 20px;
+    height: 2px;
+    background-color: black;
+  }
+
+  .btn-navbar{
+    padding: 7px 10px;
+  }
+
+  .pull-right {
+    display: none !important;
+  }
+    #taglines.span3 {
+    width: auto !important;
+  }
+
+  .jumbotron .container,  {
+      width: 924px !important;
+      overflow: visible;
+    }
+
+  #splash {
+    .span8 {
+
+      width: auto;
+    }
+  }
+
+  .span8 myCarousel {
+  }
+    header {
+      .jumbotron {
+      .container {
+        zoom: 75%;
+        width: auto;
+      }
+    }
+  }
+
+  .nav-collapse, .nav-collapse.collapse {
+    height: 0;
+    overflow: hidden;
+  }
+  .navbar .btn-navbar {
+    display: block;
+  } 
+  .nav-collapse .dropdown-menu:before,
+  .nav-collapse .dropdown-menu:after {
+    display: block;
+  }
+  .nav-collapse .dropdown-menu .divider {
+    display: inline-block;
+    overflow: hidden;
+  }
+}
+
+
+@media (max-width: 767px) {
+  body{
+  padding: 0;
+    container {
+      width: auto;}
+  }
+
+  #sections, footer, #contact, .content, #faq, #index {
+    padding: 0 15px;
+  }
+
+  .jumbotron {
+    zoom: 60%;
+    .container {
+      margin-left: 33px;
+      width: auto;
+    }
+  }
+
+  nav.nav li ul.social {
+    display: none !important;
+  }
+
+}
+
+@media (max-width: 480px) {
+  .nav {
+    li {
+      a {
+        padding: 5px;
+      }
+    }
+  }
+  .jumbotron {
+    zoom: 50%;
+    .container {
+      margin-left: 57px;
+    }
+  }
+
+  .nav-collapse {
+    -webkit-transform: translate3d(0, 0, 0);
+  }
+    input[type="checkbox"],
+  input[type="radio"] {
+    border: 1px solid #ccc;
+  }
+}

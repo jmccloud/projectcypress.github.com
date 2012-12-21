@@ -1,188 +1,227 @@
 <!doctype html>
-<meta charset=utf-8>
+<meta charset="UTF-8" />
 <html>
   <head>
-    <title>Cypress - News</title>
+    <title>Cypress - Program Information</title>
     <!-- Enable IE9 Standards mode -->
-    <meta http-equiv="X-UA-Compatible" content="IE=9" >
+    <meta http-equiv="X-UA-Compatible" content="IE=9">
     <!--[if lt IE 9]>
     <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
     <![endif]-->
-		<link rel="stylesheet" href="bootstrap/css/bootstrap.css" type="text/css" />
-		<link rel="stylesheet" href="bootstrap/css/bootstrap-responsive.css" type="text/css" />
-		<link rel="stylesheet" href="css/style.css" type="text/css" />
-		<script type="text/javascript" src="js/jquery-1.8.1.js"></script>
+		<link rel="stylesheet" href="css/master.css" type="text/css" />
     <link rel="icon" type="image/png" href="images/cypress.png"/>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
   </head>
-  <body class="container">
+  <body>
   	<a class="screenreader" href="#content">skip navigation</a>
-  	<header class="navbar">
-  		<div class="navbar-inner row">
-  			<span class="span4 logo">
-				<a href="#">
-					<img src="images/cypress_logo.png" alt="Cypress" />
-				</a>
-			</span>
-				<div class="span4 external-links">
+  	<header>
+  		<div class="navbar navbar-inverse navbar-static-top">
+	  		<div class='navbar-inner external'>
+	  			<div class="container">
+			  		<nav class="nav">
+						  <li>
+						  	<a href="http://demo.projectcypress.org">Demo</a>
+						  </li>
+							<li><a href="https://github.com/projectcypress/cypress/wiki/Installation-Guide">Download Cypress v2.0</a></li>
+							<li><a href="http://www.healthit.gov/">HealthIT.gov</a>
+							</li>
+							<li>
+								<ul class="social">
+									<div id="fb-root"></div>
+									<script>(function(d, s, id) {
+									  var js, fjs = d.getElementsByTagName(s)[0];
+									  if (d.getElementById(id)) return;
+									  js = d.createElement(s); js.id = id;
+									  js.src = "//connect.facebook.net/en_US/all.js#xfbml=1";
+									  fjs.parentNode.insertBefore(js, fjs);
+									}(document, 'script', 'facebook-jssdk'));</script>
+									<li class="fb-like" data-href="http://projectcypress.org" data-send="false" data-layout="button_count" data-width="450" data-show-faces="false"></li>
+									<li class="rss">
+										<a href="http://feeds.feedburner.com/healthitgov" title="Subscribe/RSS"><img src="images/rss.png" alt="Subscribe to ONC RSS feed"/></a>
+									</li>
+									<li class="twitter">
+										<a class="fix-transparency" title="Follow ONC on Twitter" href="http://twitter.com/ONC_HealthIT/"><img src="images/twitter.png" alt="Follow ONC on Twitter"></a>
+									</li>
+									<li class="youtube">
+										<a class="fix-transparency" title="Follow Project ONC on Youtube" href="http://www.youtube.com/user/HHSONC"><img src="images/youtube.png" alt="Subscribe to ONC on YouTube"/></a>
+									</li>
+									<li class="linkedin">
+										<a class="fix-transparency" title="Follow ONC on LinkedIn" href="http://www.linkedin.com/title/office+coordinator/in-us-97-Washington-D.C.-Metro-Area/"><img src="images/linkedin.png" alt="Follow ONC on Linkedin"/></a>
+									</li>
+									<li class="flickr">
+										<a class="fix-transparency" title="Find ONC Photos on Flickr" href="http://www.flickr.com/photos/healthit/"><img src="images/flickr.png" alt="Find ONC Photos on Flickr"/></a>
+									</li>	
+									<li class="slideshare">
+										<a class="fix-transparency" title="Find ONC Presentations on SlideShare" href="http://www.slideshare.net/HealthIT"><img src="images/slideshare.png" alt="Find ONC Presentations on SlideShare"/></a>	
+									</li>
+									<li class="googleplus">
+										<a class="fix-transparency" title="Find ONC on Google Plus" href="https://plus.google.com/115897569896631074599/posts"><img src="images/gplus.png" alt="Follow ONC on Google Plus"/></a>	
+									</li>
+								</ul>
+							</li>
+						</nav>
+					</div>
 				</div>
 			</div>
-			<div class="nav-listing row">
-		  			<a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
-	  					<span class="icon-bar"></span>
-	  					<span class="icon-bar"></span>
-	  					<span class="icon-bar"></span>
-		  			</a>
-      			<div class="nav-collapse collapse">
-					<nav class="span12 nav nav-tabs">
-						<li><a href="index.html">Home</a></li>
-						<li><a href="prog_info.html">Program Information</a></li>
-						<li><a href="test_data.html">Test Data</a></li>
-						<li><a href="resources.html">Resources</a></li>
-						<li class="active"><a href="news.html">News</a></li>
-						<li><a href="faq.html">FAQ</a></li>
-						<li><a href="contact.html">Contact</a></li>
-						<li><a href="http://demo.projectcypress.org">Demo</a></li>
-						<li><a href="https://github.com/projectcypress/cypress/wiki/Installation-Guide">Download (Beta)</a></li>
-					</nav>
+  		<div class="jumbotron">
+  			<div class="container">
 				</div>
 			</div>
-		</div>
+			<div class="container">
+				<div class="nav-listing row">
+	  			<a  class="btn btn-navbar collapsed" data-toggle="collapse" data-target=".nav-collapse">
+  					<span class="icon-bar"></span>
+  					<span class="icon-bar"></span>
+  					<span class="icon-bar"></span>
+	  			</a>
+	      	<div class="nav-collapse collapse">
+						<ul class="span12 nav nav-tabs">
+							<li><a href="index.html" id="home">Home</a></li>
+							<li><a href="prog_info.html">Program Information</a></li>
+							<li><a href="test_data.html">Test Data</a></li>
+							<li><a href="resources.html">Resources</a></li>
+							<li class="active"><a href="news.html">News</a></li>
+							<li><a href="faq.html">FAQ</a></li>
+							<li><a href="contact.html">Contact</a></li>
+						</ul>
+					</div>
+				</div>
+			</div>
 		</header>
-		<div class="container content" id="contact">
+		<div class="content container" id="index">
 			<a name="content"></a>
 			<div class="row">
 				<div class="span12">
-					<h2>Cypress - Certified Health IT Testing Tool Demonstration January 10th 2013</h2>
-					<br/>
-					<p>A demonstration of the open source Cypress testing tool along with a Question and Answer session will be held on Thursday, January 10, 2013  1:00-2:30 pm EST.  Participants are encouraged to register for this webinar via <a href="https://www4.gotomeeting.com/register/134320279">this link</a>.
-					</p>
-					<br/>
-					<h2>CQM Educational Series: Certification of e-Quality Measures for Meaningful Use Stage 2</h2>
-					<br/>
-					<ul>
-						<li>Welcome and Introduction</li>
-						<li>CMS announcement of upcoming RFI
-							<ul>
-								<li>&nbsp;&nbsp;&nbsp;&nbsp;Plans for the EP measure updates</li>
-								<li>&nbsp;&nbsp;&nbsp;&nbsp;Plans for the EH measure updates</li>
-							</ul>
-						</li>
-						<li>Pending CQM changes and associated CQM resources</li>
-						<li>New resource: <a href="http://www.cms.gov/Regulations-and-Guidance/Legislation/EHRIncentivePrograms/Downloads/2014_eCQM_Measure_Logic_Guidance.pdf">Clinical Quality eMeasure Logic and Implementation Guidance</a></li>
-						<li>&nbsp;</li>
-						<li>CQMs updated release dates to CMS</li>
-						<li>EP Measure Updates
-							<ul>
-								<li>&nbsp;&nbsp;&nbsp;&nbsp;CMS2v1, NQF 0418, Preventive Care and Screening: Screening for Clinical Depression and Follow-Up Plan – Correct value set name in the adult portion of the numerator; update QRDA template for birth date in MAT following NQF guidance.</li>
-								<li>&nbsp;&nbsp;&nbsp;&nbsp;CMS136v1, NQF 0108, ADHD: Follow-Up Care for Children Prescribed Attention-Deficit/Hyperactivity Disorder (ADHD) Medication – Correct denominator exclusion construct from AND to OR.</li>
-								<li>&nbsp;&nbsp;&nbsp;&nbsp;CMS166v1, NQF 0052, Use of Imaging Studies for Low Back Pain – Change numerator logic to AND NOT to remove the need for the external (1 – [num/denom]) calculation.</li>
-								<li>&nbsp;&nbsp;&nbsp;&nbsp;CMS141v1, NQF 0385, Colon Cancer: Chemotherapy for AJCC Stage III Colon Cancer Patients – Add a logic statement to restrict the first diagnosis of colon cancer to the measurement period.</li>
-								<li>&nbsp;&nbsp;&nbsp;&nbsp;CMS61v1, no NQF number, Preventive Care and Screening: Cholesterol – Fasting Low Density Lipoprotein (LDL-C) Test Performed – Changed denominator logic to look for diagnosis before or during measurement period for first denominator and added AND NOT diagnosis before or during measurement period for the other two denominators; update QRDA template for Patient Characteristic: Male in MAT following NQF guidance.</li>
-								<li>&nbsp;&nbsp;&nbsp;&nbsp;CMS64v1, no NQF number, Preventive Care and Screening: Risk-Stratified Cholesterol – Fasting Low Density Lipoprotein (LDL-C) – Similar changes as CMS61v1, plus addition of Framingham requirement in the third numerator; update QRDA template for Patient Characteristic: Female in MAT following NQF guidance.</li>
-								<li>&nbsp;&nbsp;&nbsp;&nbsp;CMS65v1, no NQF number, Hypertension: Improvement in Blood Pressure – Update QRDA template for birth date in MAT following NQF guidance.</li>
-								<li>&nbsp;&nbsp;&nbsp;&nbsp;CMS68v1, NQF 0419, Documentation of Current Medications in the Medical Record – Update QRDA template for birth date in MAT following NQF guidance.</li>
-								<li>&nbsp;&nbsp;&nbsp;&nbsp;CMS90v1, no NQF number, Functional Status Assessment for Complex Chronic Conditions – Update QRDA template for birth date in MAT following NQF guidance.</li>
-								<li>&nbsp;&nbsp;&nbsp;&nbsp;CMS74v1, no NQF number, Primary Caries Prevention Intervention as Offered by Primary Care Providers, including Dentists – Guidance to be updated to indicate stratification that was present in the header but was inadvertently deleted from the measure.</li>
-								<li>&nbsp;&nbsp;&nbsp;&nbsp;CMS 129v1, NQF 389—Prostate Cancer: Avoidance of Overuse of Bone Scan for Staging Low Risk Prostate Cancer Patients—Deleted exception Diagnostic Study, Order: Bone Scan (Source: ‘Other provider’) as Source attribute not supported by QRDA 1; added value set Reason Documented to capture documented reason for performing bone scan as an exception.</li>
-							</ul>
-						</li>
-						<li>&nbsp;</li>
-						<li>EH Measure Updates
-							<ul>
-								<li>&nbsp;&nbsp;&nbsp;&nbsp;CMS178v1, NQF 0453—SCIP-INF-9-- Urinary catheter removed on Postoperative Day 1 (POD 1) or Postoperative Day 2 (POD 2) with day of surgery being day zero—This measure intends to look at patients with a catheter in place postoperatively, but the logic  specified catheters “placed postoperatively”. The logic is changed so that either that the catheter is placed before the end of the procedure, or at some time after the end of the procedure.   </li>
-								<li>&nbsp;&nbsp;&nbsp;&nbsp;CMS 32v1, NQF 0496-- ED-3- Median Time from ED Arrival to ED departure for Discharged ED patients.—Header updated to eliminate requirement for missing data reporting and correct reporting period.</li>
-								<li>&nbsp;&nbsp;&nbsp;&nbsp;CMS 111v1, NQF 0497—ED2-- Admit decision time to ED departure time for admitted patients-- Header updated to eliminate requirement for missing data reporting and correct reporting period.</li>
-								<li>&nbsp;&nbsp;&nbsp;&nbsp;CMS 55v1, NQF 0495—ED1-- Median time from ED arrival to ED departure for admitted ED patients Description-- Header updated to eliminate requirement for missing data reporting and correct reporting period.</li>
-								<li>&nbsp;&nbsp;&nbsp;&nbsp;CMS 71v1, NQF 0436—STK-3-- Anticoagulation Therapy for Atrial Fibrillation/Flutter— This measure requires a diagnostic study result of atrial fib/flutter but logic did not include a value set to define the diagnostic study, only the result.  A value set for the diagnostic study was added. </li>
-								<li>&nbsp;&nbsp;&nbsp;&nbsp;CMS 91v1, NQF 0437—STK-4-- Ischemic stroke – Thrombolytic Therapy-- Logic should show therapy provided in the ED would not exclude the patient from the measure and is changed to include treatment provided during ³Occurrence A of Encounter, Performed: Emergency Department Visit (facility location arrival date time)². </li>
-								<li>&nbsp;&nbsp;&nbsp;&nbsp;CMS 171v1, NQF 0527— SCIP-INF-1 Prophylactic Antibiotic Received within 1 Hour Prior to Surgical Incision—Antibiotics were joined in the numerator with “AND” rather than “OR”, requiring the patient to be on all ten antibiotics simultaneously to satisfy the measure, therefore the logic was changed to correct this error.</li>
-								<li>&nbsp;&nbsp;&nbsp;&nbsp;CMS 172v1, NQF 0528— SCIP-INF-2-- Prophylactic Antibiotic Selection for Surgical Patients-- Header updated to eliminate requirement for missing data reporting and correct reporting period.</li>
-								<li>&nbsp;&nbsp;&nbsp;&nbsp;CMS 30v1, NQF 0639— Value set coding for LDLc using SNOMED codes was replaced  to harmonize the value set for LDLc using LOINC codes with the value set from measure CMSv1, NQF 0439. Both measures now use the same value set. The measure previously used the admission datetime rather than the inpatient discharge datetime. The measure logic was updated to reflect the correct datetime. </li>
-								<li>&nbsp;&nbsp;&nbsp;&nbsp;CMS 188v1, NQF 0147-- PN-6- Initial Antibiotic Selection for Community-Acquired Pneumonia (CAP) in Immunocompetent Patients-- The denominator exclusions included a duplicate statement about Transfer From: Hospital Measures – Ambulatory surgical center. The duplicate statement was to reflect transfer from an acute care hospital. The measure also incorrectly used a datetime attribute with a value set on medication routes, so the value set was updated to reflect the correct route attribute. The header was also updated to reflect that missing data does not require reporting.</li>
-							</ul>
-						</li>
-						<li>&nbsp;</li>
-						<li>&nbsp;</li>			
-						<li>Overarching thematic changes in the CQMs
-							<ul>
-								<li>&nbsp;&nbsp;&nbsp;&nbsp;CQM Exceptions</li>
-								<li>&nbsp;&nbsp;&nbsp;&nbsp;Allergies</li>
-								<li>&nbsp;&nbsp;&nbsp;&nbsp;Age ranges</li>
-								<li>&nbsp;&nbsp;&nbsp;&nbsp;Alignment of Industry Standard Terminologies</li>
-							</ul>
-						</li>
-						<li><a href="http://www.hl7.org/implement/standards/product_brief.cfm?product_id=35">HL7 QRDA Standard</a> and MU Stage 2 CQM Reporting
-							<ul>
-								<li>&nbsp;&nbsp;&nbsp;&nbsp;Review <a href="http://www.hl7.org/permalink?CDAR2_QRDA">QRDA Category 1 Changes</a></li>
-								<li>&nbsp;&nbsp;&nbsp;&nbsp;Review <a href="http://www.hl7.org/permalink?CDAR2_IG_QRDA_CATIII_R1_NOV">QRDA Category 3 Changes</a></li>
-								<li>&nbsp;&nbsp;&nbsp;&nbsp;<a href="http://www.hl7.org/documentcenter/public/ballots/2012SEP/reconciliation/recon_cdar2_qrda_r1_u2_2012sep.xls">QRDA Category 3 Delta Document</a></li>
-							</ul>
-						</li>
-						<li>Cypress Certification Testing Plans of MU Stage 2 CQMs
-							<ul>
-								<li>&nbsp;&nbsp;&nbsp;&nbsp;Cypress v2.0 <a href="https://github.com/projectcypress/cypress/wiki/Installation-Guide">testing package</a> for Authorized Testing Labs available on December 21 2012</li>
-								<li>&nbsp;&nbsp;&nbsp;&nbsp;Cypress use in the 2014 testing and certification program on January 2nd 2013</li>
-								<li>&nbsp;&nbsp;&nbsp;&nbsp;NLM-gated access to the <a href="http://demo.projectcypress.org/bundles/bundle-latest.zip">EP, EH, QRDA Test Decks</a></li>
-								<li>&nbsp;&nbsp;&nbsp;&nbsp;Access to the CQM test procedures <a href="http://www.healthit.gov/sites/default/files/pdf/170%20314%20c%20ClinicalQualityMeasure_2014_TP_Draftv1_0.pdf">using Cypress</a></li>
-								<li>&nbsp;&nbsp;&nbsp;&nbsp;Changes in the Cypress test procedure to use <a href="http://projectcypress.org/news.html">QRDA Category 1 XML</a> for sending patient data from Cypress to EHRs</li>
-							</ul>
-						</li>
-						<li>Upcoming CQM-Related Events
-							<ul>
-								<li>&nbsp;&nbsp;&nbsp;&nbsp;Cypress certification demonstration tool <a href="https://www4.gotomeeting.com/register/134320279">webinar</a> January 10th at 1pm</li>
-								
-								<li>&nbsp;&nbsp;&nbsp;&nbsp;Certification Questions to <a href="mailto:ONC.Certification@hhs.gov">ONC.Certification@hhs.gov</a></li>
-								<li>&nbsp;&nbsp;&nbsp;&nbsp;Submit Cypress-specific questions via <a href="http://projectcypress.org/contact.html">contact link</a> on the Cypress website</li>
-							</ul>
-						</li>
-					</ul>
-					<br/><br/>
-					<h2>Open Forum: Community Feedback on Cypress v2.0 Patient XML Standards</h2>
-					<p>On Monday November 26th, at 5:00 p.m. Eastern Standard Time an open forum will be hosted by the Cypress project to facilitate feedback on the use of the Consolidated CDA XML standard and the QRDA Category 1 XML standard in Cypress v2.0's production release.  This meeting is open to all participants; EHR vendors, Authorized Testing Labs, United States Government policy leaders, as well as any individual wanting to provide feedback on patient-level XML that will be used by the production version of Cypress v2.0 for the Meaningful Use Stage 2 testing and certification program.</p>
-					<p>The topic of this forum will be focused solely on feedback around the CCDA and QRDA Category 1 XML standards for automated, machine interoperable XML format that will send patient-level data to EHR systems for Meaningful Use Stage 2 testing and certification.  This discussion will provide significant feedback on the details of the final production release of Cypress v2.0 on December 21st, 2012.</p>
-					<p>To attend the audio-only teleconference forum:<br/>
-					Dial: <b>703-983-6338</b><br/>
-					Provide Meeting ID: <b>542622</b></p>
-					<br/>
-					<p><b><u>UPDATE</u></b>: On Monday November 26th, ONC held an open forum with stakeholders to discuss the use of the QRDA Category 1 XML format in rather than the Consolidated CDA (CCDA) XML format for exporting patient-level data from the Cypress v2.0 software for Electronic Health Record (EHR) systems.  The discussion on the use of these standards was in context of testing and certification of Clinical Quality Measures (CQMs) for Stage 2 of the CMS Meaningful Use Incentive program and the 2104 Edition of the ONC EHR certification program.</p>
-					<p>The issues precipitating this conversation regard the CCDA XML standard's inability to completely express clinical attributes to exercise and test the MU Stage 2 Eligible Professional (EP) and Eligible Hospital (EH) CQM logic.  Some examples of these issues include ambiguity and/or gaps in the CCDA for expressing clinical attributes such as facility location, negation rationale, severity of diagnosis, transfer of hospital.  These and additional concepts are part of the MU Stage 2 EP and EH CMQ logic, and are either ambiguous or not supported in the CCDA XML standard.  XML data validation issues were also identified when using the CCDA against the newly developed Cypress v2.0 patient test data.  These synthetic Cypress v2.0 patient records are required for testing and certifying EHR systems' ability to generate accurate calculate for MU Stage 2 EP and EH CQMs.</p>
-					<p>To resolve these issues with the CCDA XML standard's use in Cypress v2.0, the proposal was made to eliminate the CCDA for sending patient-level data for automated  import from Cypress to EHR systems, and replace the CCDA with the QRDA Category 1 XML.   The sole use of the QRDA Category 1 XML standard would be a change from the previously communicated plans for the Cypress v2.0 project.</p>
-					<p>Feedback from the vendor and EHR testing communities was collected during the open forum.  The majority of feedback supported the notion that it would be more  desirable for vendors to work with single XML format for patient level data with Cypress v2.0.  Participants also agreed that using the CCDA XML to express all clinical data needed to exercise the EP and EH CQM logic would be challenging.  With the QRDA Category 1 XML standard already established in the "Capture and Export" test criterion, the more feasible QRDA Category 1 XML format was viewed as a the most appropriate approach.</p>
-					<p>Based on:</p>
-					<ul>
-						<li>* The recommendation to use a more interoperable XML standard for sending patient-level data to EHR systems;</li>
-						<li>* The need simply the MU Stage 2 testing process for CQMs by using one XML standard for patient-level data; and</li>
-						<li>* The broader community's feedback collected during this open forum,</li>
-					</ul>
-					<p>the QRDA Category 1 XML standard will be the sole mechanism in Cypress v2.0 for importing the patient-level data for testing the "Import and Calculate" tests on January 2nd, 2013.</p>
-					<p>The original visual presentation of patient data via an HTML view will remain in Cypress v2.0.  This support is needed by vendors who will manually enter the patient test records. The ability to download patient-level data in the CCDA, HITSP C32, and ASTM CCR XML formats will be unavailable in Cypress v2.0 as of January 2nd 2013.
-					<p>Should you have any other questions, please feel free to let us know at <a href="mailto:talk@projectcypress.org">talk@projectcypress.org</a>
+						<h2>Cypress - Certified Health IT Testing Tool Demonstration January 10th 2013</h2>
+						<p>A demonstration of the open source Cypress testing tool along with a Question and Answer session will be held on Thursday, January 10, 2013  1:00-2:30 pm EST.  Participants are encouraged to register for this webinar via <a href="https://www4.gotomeeting.com/register/134320279">this link</a>.
+						</p>
+						<br/>
+						<h2>CQM Educational Series: Certification of e-Quality Measures for Meaningful Use Stage 2</h2>
+						<ul>
+							<li>Welcome and Introduction</li>
+							<li>CMS announcement of upcoming RFI
+								<ul>
+									<li>Plans for the EP measure updates</li>
+									<li>Plans for the EH measure updates</li>
+								</ul>
+							</li>
+							<li>New resource: <a href="http://www.cms.gov/Regulations-and-Guidance/Legislation/EHRIncentivePrograms/Downloads/2014_eCQM_Measure_Logic_Guidance.pdf">Clinical Quality eMeasure Logic and Implementation Guidance</a></li>
+							<li>EP Measure Updates
+								<ul>
+									<li>CMS2v1, NQF 0418, Preventive Care and Screening: Screening for Clinical Depression and Follow-Up Plan – Correct value set name in the adult portion of the numerator; update QRDA template for birth date in MAT following NQF guidance.</li>
+									<li>CMS136v1, NQF 0108, ADHD: Follow-Up Care for Children Prescribed Attention-Deficit/Hyperactivity Disorder (ADHD) Medication – Correct denominator exclusion construct from AND to OR.</li>
+									<li>CMS166v1, NQF 0052, Use of Imaging Studies for Low Back Pain – Change numerator logic to AND NOT to remove the need for the external (1 – [num/denom]) calculation.</li>
+									<li>CMS141v1, NQF 0385, Colon Cancer: Chemotherapy for AJCC Stage III Colon Cancer Patients – Add a logic statement to restrict the first diagnosis of colon cancer to the measurement period.</li>
+									<li>CMS61v1, no NQF number, Preventive Care and Screening: Cholesterol – Fasting Low Density Lipoprotein (LDL-C) Test Performed – Changed denominator logic to look for diagnosis before or during measurement period for first denominator and added AND NOT diagnosis before or during measurement period for the other two denominators; update QRDA template for Patient Characteristic: Male in MAT following NQF guidance.</li>
+									<li>CMS64v1, no NQF number, Preventive Care and Screening: Risk-Stratified Cholesterol – Fasting Low Density Lipoprotein (LDL-C) – Similar changes as CMS61v1, plus addition of Framingham requirement in the third numerator; update QRDA template for Patient Characteristic: Female in MAT following NQF guidance.</li>
+									<li>CMS65v1, no NQF number, Hypertension: Improvement in Blood Pressure – Update QRDA template for birth date in MAT following NQF guidance.</li>
+									<li>CMS68v1, NQF 0419, Documentation of Current Medications in the Medical Record – Update QRDA template for birth date in MAT following NQF guidance.</li>
+									<li>CMS90v1, no NQF number, Functional Status Assessment for Complex Chronic Conditions – Update QRDA template for birth date in MAT following NQF guidance.</li>
+									<li>CMS74v1, no NQF number, Primary Caries Prevention Intervention as Offered by Primary Care Providers, including Dentists – Guidance to be updated to indicate stratification that was present in the header but was inadvertently deleted from the measure.</li>
+									<li>CMS 129v1, NQF 389—Prostate Cancer: Avoidance of Overuse of Bone Scan for Staging Low Risk Prostate Cancer Patients—Deleted exception Diagnostic Study, Order: Bone Scan (Source: ‘Other provider’) as Source attribute not supported by QRDA 1; added value set Reason Documented to capture documented reason for performing bone scan as an exception.</li>
+								</ul>
+							</li>
+							<li>EH Measure Updates
+								<ul>
+									<li>CMS178v1, NQF 0453—SCIP-INF-9-- Urinary catheter removed on Postoperative Day 1 (POD 1) or Postoperative Day 2 (POD 2) with day of surgery being day zero—This measure intends to look at patients with a catheter in place postoperatively, but the logic  specified catheters “placed postoperatively”. The logic is changed so that either that the catheter is placed before the end of the procedure, or at some time after the end of the procedure.   </li>
+									<li>CMS 32v1, NQF 0496-- ED-3- Median Time from ED Arrival to ED departure for Discharged ED patients.—Header updated to eliminate requirement for missing data reporting and correct reporting period.</li>
+									<li>CMS 111v1, NQF 0497—ED2-- Admit decision time to ED departure time for admitted patients-- Header updated to eliminate requirement for missing data reporting and correct reporting period.</li>
+									<li>CMS 55v1, NQF 0495—ED1-- Median time from ED arrival to ED departure for admitted ED patients Description-- Header updated to eliminate requirement for missing data reporting and correct reporting period.</li>
+									<li>CMS 71v1, NQF 0436—STK-3-- Anticoagulation Therapy for Atrial Fibrillation/Flutter— This measure requires a diagnostic study result of atrial fib/flutter but logic did not include a value set to define the diagnostic study, only the result.  A value set for the diagnostic study was added. </li>
+									<li>CMS 91v1, NQF 0437—STK-4-- Ischemic stroke – Thrombolytic Therapy-- Logic should show therapy provided in the ED would not exclude the patient from the measure and is changed to include treatment provided during ³Occurrence A of Encounter, Performed: Emergency Department Visit (facility location arrival date time)². </li>
+									<li>CMS 171v1, NQF 0527— SCIP-INF-1 Prophylactic Antibiotic Received within 1 Hour Prior to Surgical Incision—Antibiotics were joined in the numerator with “AND” rather than “OR”, requiring the patient to be on all ten antibiotics simultaneously to satisfy the measure, therefore the logic was changed to correct this error.</li>
+									<li>CMS 172v1, NQF 0528— SCIP-INF-2-- Prophylactic Antibiotic Selection for Surgical Patients-- Header updated to eliminate requirement for missing data reporting and correct reporting period.</li>
+									<li>CMS 30v1, NQF 0639— Value set coding for LDLc using SNOMED codes was replaced  to harmonize the value set for LDLc using LOINC codes with the value set from measure CMSv1, NQF 0439. Both measures now use the same value set. The measure previously used the admission datetime rather than the inpatient discharge datetime. The measure logic was updated to reflect the correct datetime. </li>
+									<li>CMS 188v1, NQF 0147-- PN-6- Initial Antibiotic Selection for Community-Acquired Pneumonia (CAP) in Immunocompetent Patients-- The denominator exclusions included a duplicate statement about Transfer From: Hospital Measures – Ambulatory surgical center. The duplicate statement was to reflect transfer from an acute care hospital. The measure also incorrectly used a datetime attribute with a value set on medication routes, so the value set was updated to reflect the correct route attribute. The header was also updated to reflect that missing data does not require reporting.</li>
+								</ul>
+							</li>
+							<li>Overarching thematic changes in the CQMs
+								<ul>
+									<li>CQM Exceptions</li>
+									<li>Allergies</li>
+									<li>Age ranges</li>
+									<li>Alignment of Industry Standard Terminologies</li>
+								</ul>
+							</li>
+							<li><a href="http://www.hl7.org/implement/standards/product_brief.cfm?product_id=35">HL7 QRDA Standard</a> and MU Stage 2 CQM Reporting
+								<ul>
+									<li>Review <a href="http://www.hl7.org/permalink?CDAR2_QRDA">QRDA Category 1 Changes</a></li>
+									<li>Review <a href="http://www.hl7.org/permalink?CDAR2_IG_QRDA_CATIII_R1_NOV">QRDA Category 3 Changes</a></li>
+									<li><a href="http://www.hl7.org/documentcenter/public/ballots/2012SEP/reconciliation/recon_cdar2_qrda_r1_u2_2012sep.xls">QRDA Category 3 Delta Document</a></li>
+								</ul>
+							</li>
+							<li>Cypress Certification Testing Plans of MU Stage 2 CQMs
+								<ul>
+									<li>Cypress v2.0 <a href="https://github.com/projectcypress/cypress/wiki/Installation-Guide">testing package</a> for Authorized Testing Labs available on December 21 2012</li>
+									<li>Cypress use in the 2014 testing and certification program on January 2nd 2013</li>
+									<li>NLM-gated access to the <a href="http://demo.projectcypress.org/bundles/bundle-latest.zip">EP, EH, QRDA Test Decks</a></li>
+									<li>Access to the CQM test procedures <a href="http://www.healthit.gov/sites/default/files/pdf/170%20314%20c%20ClinicalQualityMeasure_2014_TP_Draftv1_0.pdf">using Cypress</a></li>
+									<li>Changes in the Cypress test procedure to use <a href="http://projectcypress.org/news.html">QRDA Category 1 XML</a> for sending patient data from Cypress to EHRs</li>
+								</ul>
+							</li>
+							<li>Upcoming CQM-Related Events
+								<ul>
+									<li>Cypress certification demonstration tool <a href="https://www4.gotomeeting.com/register/134320279">webinar</a> January 10th at 1pm</li>
+									<li>Certification Questions to <a href="mailto:ONC.Certification@hhs.gov">ONC.Certification@hhs.gov</a></li>
+									<li>Submit Cypress-specific questions via <a href="http://projectcypress.org/contact.html">contact link</a> on the Cypress website</li>
+								</ul>
+							</li>
+						</ul>
+						<br/>
+						<h2>Open Forum: Community Feedback on Cypress v2.0 Patient XML Standards</h2>
+						<p>On Monday November 26th, at 5:00 p.m. Eastern Standard Time an open forum will be hosted by the Cypress project to facilitate feedback on the use of the Consolidated CDA XML standard and the QRDA Category 1 XML standard in Cypress v2.0's production release.  This meeting is open to all participants; EHR vendors, Authorized Testing Labs, United States Government policy leaders, as well as any individual wanting to provide feedback on patient-level XML that will be used by the production version of Cypress v2.0 for the Meaningful Use Stage 2 testing and certification program.</p>
+						<p>The topic of this forum will be focused solely on feedback around the CCDA and QRDA Category 1 XML standards for automated, machine interoperable XML format that will send patient-level data to EHR systems for Meaningful Use Stage 2 testing and certification.  This discussion will provide significant feedback on the details of the final production release of Cypress v2.0 on December 21st, 2012.</p>
+						<p>To attend the audio-only teleconference forum:<br/>
+						Dial: <b>703-983-6338</b><br/>
+						Provide Meeting ID: <b>542622</b></p>
+						<br/>
+						<p><b><u>UPDATE</u></b>: On Monday November 26th, ONC held an open forum with stakeholders to discuss the use of the QRDA Category 1 XML format in rather than the Consolidated CDA (CCDA) XML format for exporting patient-level data from the Cypress v2.0 software for Electronic Health Record (EHR) systems.  The discussion on the use of these standards was in context of testing and certification of Clinical Quality Measures (CQMs) for Stage 2 of the CMS Meaningful Use Incentive program and the 2104 Edition of the ONC EHR certification program.</p>
+						<p>The issues precipitating this conversation regard the CCDA XML standard's inability to completely express clinical attributes to exercise and test the MU Stage 2 Eligible Professional (EP) and Eligible Hospital (EH) CQM logic.  Some examples of these issues include ambiguity and/or gaps in the CCDA for expressing clinical attributes such as facility location, negation rationale, severity of diagnosis, transfer of hospital.  These and additional concepts are part of the MU Stage 2 EP and EH CMQ logic, and are either ambiguous or not supported in the CCDA XML standard.  XML data validation issues were also identified when using the CCDA against the newly developed Cypress v2.0 patient test data.  These synthetic Cypress v2.0 patient records are required for testing and certifying EHR systems' ability to generate accurate calculate for MU Stage 2 EP and EH CQMs.</p>
+						<p>To resolve these issues with the CCDA XML standard's use in Cypress v2.0, the proposal was made to eliminate the CCDA for sending patient-level data for automated  import from Cypress to EHR systems, and replace the CCDA with the QRDA Category 1 XML.   The sole use of the QRDA Category 1 XML standard would be a change from the previously communicated plans for the Cypress v2.0 project.</p>
+						<p>Feedback from the vendor and EHR testing communities was collected during the open forum.  The majority of feedback supported the notion that it would be more  desirable for vendors to work with single XML format for patient level data with Cypress v2.0.  Participants also agreed that using the CCDA XML to express all clinical data needed to exercise the EP and EH CQM logic would be challenging.  With the QRDA Category 1 XML standard already established in the "Capture and Export" test criterion, the more feasible QRDA Category 1 XML format was viewed as a the most appropriate approach.</p>
+						<p>Based on:</p>
+						<ul>
+							<li>The recommendation to use a more interoperable XML standard for sending patient-level data to EHR systems;</li>
+							<li>The need simply the MU Stage 2 testing process for CQMs by using one XML standard for patient-level data; and</li>
+							<li>The broader community's feedback collected during this open forum,</li>
+						</ul>
+						<p>the QRDA Category 1 XML standard will be the sole mechanism in Cypress v2.0 for importing the patient-level data for testing the "Import and Calculate" tests on January 2nd, 2013.</p>
+						<p>The original visual presentation of patient data via an HTML view will remain in Cypress v2.0.  This support is needed by vendors who will manually enter the patient test records. The ability to download patient-level data in the CCDA, HITSP C32, and ASTM CCR XML formats will be unavailable in Cypress v2.0 as of January 2nd 2013.
+						<p>Should you have any other questions, please feel free to let us know at <a href="mailto:talk@projectcypress.org">talk@projectcypress.org</a>
 				</div>
 			</div>
 		</div>
-			<footer class="row" id="postscript">
-		<div class="span9">
-			<p>This project was funded by a contract from the <a href="http://www.healthit.gov/">Office of the National Coordinator for Health Information Technology (ONC)</a>  
-			</p>
-		<p><a href="http://www.hhs.gov/Privacy.html">Privacy Policy</a> <a href="http://www.hhs.gov/Disclaimer.html">Disclaimer</a>
-			</p>
-		</div>
-		<div class="span3">
-			<p>Page Last Revised: Dec 19, 2012</p>
-		</div>
-	</footer>
-	 <script type="text/javascript">
-       var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
-       document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
-     </script>
-     <script type="text/javascript">
-       try {
-         var pageTracker = _gat._getTracker("UA-22970346-1");
-         pageTracker._trackPageview();
-       } catch(err) {}
+		<footer>
+			<div class="container">
+				<div class="row">
+					<div class="span8">
+						<p>This project was funded by a contract from the <a href="http://www.hhs.gov/healthit/">Office of the National Coordinator for Health Information Technology (ONC)</a>  
+						</p>
+					<p><a href="http://www.hhs.gov/Privacy.html">Privacy Policy</a> <a href="http://www.hhs.gov/Disclaimer.html">Disclaimer</a>
+						</p>
+					</div>
+					<div class="span4">
+						<p>Page Last Revised: Dec 20, 2012</p>
+					</div>
+				</div>
+			</div>
+		</footer>
+		<script type="text/javascript">
+          var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+          document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
     </script>
-</body>
-  <script src="js/jquery-1.7.2.min.js" type="text/javascript"></script>
-<script src="bootstrap/js/bootstrap.min.js" type="text/javascript"></script>
+    <script type="text/javascript">
+          try {
+            var pageTracker = _gat._getTracker("UA-22970346-1");
+            pageTracker._trackPageview();
+          } catch(err) {}
+    </script>
+  </body>
+  <script type="text/javascript" src="js/jquery-1.8.1.js"></script>
+  <script src="bootstrap/js/bootstrap.min.js" type="text/javascript"></script>
+  <script> $('.carousel').carousel({
+					  interval: 10000
+					})
+  </script>
+
 </html>

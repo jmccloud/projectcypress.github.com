@@ -1,77 +1,120 @@
 <!doctype html>
 <meta charset=utf-8>
 <html>
-  <head>
+	<head>
     <title>Cypress - Resources</title>
     <!-- Enable IE9 Standards mode -->
-    <meta http-equiv="X-UA-Compatible" content="IE=9" >
+    <meta http-equiv="X-UA-Compatible" content="IE=9">
     <!--[if lt IE 9]>
     <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
     <![endif]-->
-		<link rel="stylesheet" href="bootstrap/css/bootstrap.css" type="text/css" />
-		<link rel="stylesheet" href="bootstrap/css/bootstrap-responsive.css" type="text/css" />
-		<link rel="stylesheet" href="css/style.css" type="text/css" />
-		<script type="text/javascript" src="js/jquery-1.8.1.js"></script>  
+		<link rel="stylesheet" href="css/master.css" type="text/css" />
+		<script type="text/javascript" src="js/jquery-1.8.1.js"></script>
     <link rel="icon" type="image/png" href="images/cypress.png"/>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
   </head>
-  <body class="container">
-  	<a class="screenreader" href="#content">skip navigation</a> 
-  	<header class="navbar">
-  		<div class="navbar-inner row">
-  			<span class="span4 logo">
-				<a href="#">
-					<img src="images/cypress_logo.png" alt="Cypress" />
-				</a>
-			</span>
-				<div class="span4 external-links">
+  <body>
+  	<a class="screenreader" href="#content">skip navigation</a>
+  	  	<header>
+  		<div class="navbar navbar-inverse navbar-static-top">
+	  		<div class='navbar-inner external'>
+	  			<div class="container">
+			  		<nav class="nav">
+						  <li>
+						  	<a href="http://demo.projectcypress.org">Demo</a>
+						  </li>
+							<li><a href="https://github.com/projectcypress/cypress/wiki/Installation-Guide">Download Cypress v2.0</a></li>
+							<li><a href="http://www.healthit.gov/">HealthIT.gov</a>
+							</li>
+							<li>
+								<ul class="social">
+									<div id="fb-root"></div>
+									<script>(function(d, s, id) {
+									  var js, fjs = d.getElementsByTagName(s)[0];
+									  if (d.getElementById(id)) return;
+									  js = d.createElement(s); js.id = id;
+									  js.src = "//connect.facebook.net/en_US/all.js#xfbml=1";
+									  fjs.parentNode.insertBefore(js, fjs);
+									}(document, 'script', 'facebook-jssdk'));</script>
+									<li class="fb-like" data-href="http://projectcypress.org" data-send="false" data-layout="button_count" data-width="450" data-show-faces="false"></li>
+									<li class="rss">
+										<a href="http://feeds.feedburner.com/healthitgov" title="Subscribe/RSS"><img src="images/rss.png" alt="Subscribe to ONC RSS feed"/></a>
+									</li>
+									<li class="twitter">
+										<a class="fix-transparency" title="Follow ONC on Twitter" href="http://twitter.com/ONC_HealthIT/"><img src="images/twitter.png" alt="Follow ONC on Twitter"></a>
+									</li>
+									<li class="youtube">
+										<a class="fix-transparency" title="Follow Project ONC on Youtube" href="http://www.youtube.com/user/HHSONC"><img src="images/youtube.png" alt="Subscribe to ONC on YouTube"/></a>
+									</li>
+									<li class="linkedin">
+										<a class="fix-transparency" title="Follow ONC on LinkedIn" href="http://www.linkedin.com/title/office+coordinator/in-us-97-Washington-D.C.-Metro-Area/"><img src="images/linkedin.png" alt="Follow ONC on Linkedin"/></a>
+									</li>
+									<li class="flickr">
+										<a class="fix-transparency" title="Find ONC Photos on Flickr" href="http://www.flickr.com/photos/healthit/"><img src="images/flickr.png" alt="Find ONC Photos on Flickr"/></a>
+									</li>	
+									<li class="slideshare">
+										<a class="fix-transparency" title="Find ONC Presentations on SlideShare" href="http://www.slideshare.net/HealthIT"><img src="images/slideshare.png" alt="Find ONC Presentations on SlideShare"/></a>	
+									</li>
+									<li class="googleplus">
+										<a class="fix-transparency" title="Find ONC on Google Plus" href="https://plus.google.com/115897569896631074599/posts"><img src="images/gplus.png" alt="Follow ONC on Google Plus"/></a>	
+									</li>
+								</ul>
+							</li>
+						</nav>
+					</div>
 				</div>
 			</div>
-			<div class="nav-listing row">
-		  			<a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
-	  					<span class="icon-bar"></span>
-	  					<span class="icon-bar"></span>
-	  					<span class="icon-bar"></span>
-		  			</a>
-      			<div class="nav-collapse collapse">
-					<nav class="span12 nav nav-tabs">
-						<li><a href="index.html">Home</a></li>
-						<li><a href="prog_info.html">Program Information</a></li>
-						<li><a href="test_data.html">Test Data</a></li>
-						<li class="active"><a href="resources.html">Resources</a></li>
-						<li><a href="news.html">News</a></li>
-						<li><a href="faq.html">FAQ</a></li>
-						<li><a href="contact.html">Contact</a></li>
-						<li><a href="http://demo.projectcypress.org">Demo</a></li>
-						<li><a href="https://github.com/projectcypress/cypress/wiki/Installation-Guide">Download (Beta)</a></li>
-					</nav>
+  		<div class="jumbotron">
+  			<div class="container">
 				</div>
 			</div>
-		</div>
-		</header> 	
+			<div class="container">
+				<div class="nav-listing row">
+	  			<a  class="btn btn-navbar collapsed" data-toggle="collapse" data-target=".nav-collapse">
+  					<span class="icon-bar"></span>
+  					<span class="icon-bar"></span>
+  					<span class="icon-bar"></span>
+	  			</a>
+	      	<div class="nav-collapse collapse">
+						<ul class="span12 nav nav-tabs">
+							<li><a href="index.html" id="home">Home</a></li>
+							<li><a href="prog_info.html">Program Information</a></li>
+							<li><a href="test_data.html">Test Data</a></li>
+							<li class="active"><a href="resources.html">Resources</a></li>
+							<li><a href="news.html">News</a></li>
+							<li><a href="faq.html">FAQ</a></li>
+							<li><a href="contact.html">Contact</a></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</header>
 		<div class="container content" id="contact">
 			<a name="content"></a>
 			<div class="row">
 				<div class="span12">
-					<h2>2014 Edition Draft Test Procedures </h2>
-					<p>The Office of the National Coordinator for Health Information Technology (ONC) has begun to post waves of draft Test Procedures and applicable test data and tool files for the 2014 Edition EHR certification criteria. The Test Procedures, once finalized and approved by the National Coordinator, will be used for testing and certifying EHR technology under the ONC HIT Certification Program (formerly referred to as the Permanent Certification Program or PCP). The Test Procedures are being developed in collaboration with the National Institute of Standards and Technology (NIST).</p>
-					<p>Download the latest §170.314(c) Clinical Quality Measure Test Procedure document detailing use of Cypress <a href="www.healthit.gov/sites/default/files/170.314c1-c3cqms_2014_tp_approvedv1.2.pdf">here</a></p>
+					<h2>2014 Edition Test Procedures </h2>
+					<p>The 2014 Edition Test Method was formally approved on December 14, 2012 by the National Coordinator and is now effective for use in ONC HIT Certification Program (formerly known as the Permanent Certification Program). Notice of the approval appears in the December 14, 2012 Federal Register. You can download the §170.314(c) Clinical Quality Measure Test Procedure document detailing the use of Cypress <a href="http://www.healthit.gov/sites/default/files/170.314c1-c3cqms_2014_tp_approvedv1.2.pdf">here</a></p>
 					<h2>Cypress v2.0 Overview Presentation</h2>
 					<p>For the presentation that details the design, software, and operational use of the Cypress v2.0 software for Meaningful Use Stage 2 CQM testing click <a href="documents/cypress_overview_prs_12_4786.pdf">here</a></p>
 				</div>
 			</div>
 		</div>
-			<footer class="row" id="postscript">
-		<div class="span9">
-			<p>This project was funded by a contract from the <a href="http://www.healthit.gov/">Office of the National Coordinator for Health Information Technology (ONC)</a>  
-			</p>
-		<p><a href="http://www.hhs.gov/Privacy.html">Privacy Policy</a> <a href="http://www.hhs.gov/Disclaimer.html">Disclaimer</a>
-			</p>
-		</div>
-		<div class="span3">
-			<p>Page Last Revised: Dec 17, 2012</p>
-		</div>
-	</footer>
+		<footer>
+			<div class="container">
+				<div class="row">
+					<div class="span8">
+						<p>This project was funded by a contract from the <a href="http://www.hhs.gov/healthit/">Office of the National Coordinator for Health Information Technology (ONC)</a>  
+						</p>
+					<p><a href="http://www.hhs.gov/Privacy.html">Privacy Policy</a> <a href="http://www.hhs.gov/Disclaimer.html">Disclaimer</a>
+						</p>
+					</div>
+					<div class="span4">
+						<p>Page Last Revised: Dec 20, 2012</p>
+					</div>
+				</div>
+			</div>
+		</footer>
 	 <script type="text/javascript">
        var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
        document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));

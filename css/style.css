@@ -93,42 +93,9 @@ h1.logo {
 #openid a {
 	border: none !important;
 }
-.navbar-inner {
-  background: #EEE;
-}
 
-.navbar .navbar-fixed-top{
-	overflow: hidden;
-	width: 100%;
-}
-.navbar .nav > li > a {
-	margin-top: 10px;
-	font-size: 18px;
-	padding: 5px 10px;
-	text-shadow: none;
-	color: black;
-}
 
-.navbar .nav > li > a.soon {
-}
 
-.navbar .nav > li > a.right {
-	padding: 0px;
-	margin-top: 3px;
-}
-
-.navbar .nav .active > a, .navbar .nav .active > a:hover {
-  background: #fff;
-  border-bottom: none;
-  color: black;
-  font-weight: 800;
-  margin-bottom:-1px;
-}
-
-.navbar .nav > li > a:hover {
-	color: black;
-	font-weight: bold;
-}
 
 #slideshow {
 }
@@ -344,7 +311,6 @@ table.contact-list {
 
 .navbar-inner {
 	position: relative;
-	padding-bottom: 25px !important;
 }
 
 .navbar-inner {
@@ -369,13 +335,7 @@ table.contact-list {
 }
 
 
-.nav {
-	vertical-align: baseline;
-	margin-left: 0;
-	padding-left: 0;
-	list-style: none;
-	margin-bottom: 20px;
-}
+
 .navbar .nav .active > a, .navbar .nav .active > a:hover {
 	padding-bottom: 15px;
 }
@@ -409,9 +369,7 @@ li #home {
 	padding-left: 10px;
 }
 
-.navbar-inner {
-  background: #fff;
-}
+
 
 
 .tag {
