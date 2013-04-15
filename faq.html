@@ -103,7 +103,9 @@
 						<li><a href="#conops"><span >What is the basic Concept of Operations for use of Cypress?</span></a></li>
 						<li><a href="#vendors"><span >How can Cypress be used by EHR vendors?</span></a></li>
 						<li><a href="#report"><span >Is Cypress used to report EHR Meaningful Use Clinical Quality Measure data?</span></a></li>
-						<li><a href="#meaningfuluse"><span >Can Cypress be used to demonstrate Meaningful Use?</span></a></li>            
+						<li><a href="#meaningfuluse"><span >Can Cypress be used to demonstrate Meaningful Use?</span></a></li>
+						<li><a href="#reportingperiod"><span >Why do the generated QRDA patients have entries with dates that are outside of the Reporting/Measurement Period?</span></a></li>
+						<li><a href="#namingconvention"><span >Why do the test patients have different naming conventions at certain times versus others?</span></a></li>
 					</ul>
 				</div>
 				<div class="span3">
@@ -185,6 +187,19 @@
 						<h2>Can Cypress be used to demonstrate Meaningful Use?</h2>
 					</div>
 					<p>No.  Cypress could be a supporting software tool to help test EHR systems and EHR modules for accurate calculation of Meaningful Use Clinical Quality Measures.  Eligible health care professionals can qualify for incentive payments under the Meaningful Use program when they adopt certified EHR technology and use it to achieve specified objectives. One of those specified objectives that an eligible provider must meet is to report on Meaningful Use Clinical Quality Measures.</p>
+				</div>
+				<div class="questionAnswer">
+					<div class="question" id="reportingperiod">
+						<h2>Why do the generated QRDA patients have entries with dates that are outside of the Reporting/Measurement Period?</h2>
+					</div>
+					<p>Cypress will export all entries in the patient record that belong to the relevant valuesets for the data criterion for the measure, regardless of date.   This is because some measures require data that is outside of the designated Measure Period.  As a result, no date filtering on the data is done when the patients are generated.</p>
+				</div>
+				
+				<div class="questionAnswer">
+					<div class="question" id="namingconvention">
+						<h2>Why do the test patients have different naming conventions at certain times versus others?</h2>
+					</div>
+					<p>Why do the test patients have different naming conventions at certain times versus others?  A:  The test file names will differ depending on their use.  Most important to know is that if you are creating a test in the Cypress software, a realistic patient name is randomly assigned to those records (e.g. Arlene Maxwell and Randall Vasquez).  The name assigned to that record will differ each time a new test is created.  However, any other time you view the patient files outside of the testing scenario, the patient records will take on a clinical naming convention (e.g. SCIP_Adult A, NEWBORN A and VTE_Adult C).</p>
 				</div>
 				<div class="questionAnswer">
 					<div class="question" id="oss">
@@ -270,7 +285,7 @@
 					<p><a href="http://www.hhs.gov/Privacy.html">Privacy Policy</a> <a href="http://www.hhs.gov/Disclaimer.html">Disclaimer</a></p>
 				</div>
 				<div class="span4">
-					<p>Page Last Revised: Mar 29, 2013</p>
+					<p>Page Last Revised: Apr 15, 2013</p>
 				</div>
 			</div>
 		</div>
