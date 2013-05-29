@@ -93,6 +93,11 @@ nav-listing nav li.active {
 		border-bottom: 2px solid white;
 }
 
+.nav-listing .nav-tabs li {
+margin-bottom: -2px;
+color: black !important;
+}
+
 .nav-listing .nav .active > a, .navbar .nav .active > a:hover {
   background: #fff;
   border-bottom: none;

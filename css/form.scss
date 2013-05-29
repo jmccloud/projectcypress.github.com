@@ -25,3 +25,19 @@ input {
 .taglines{
 	padding-right: 40px;
 }
+a[href$=".pdf"] {
+  background: url('/images/pdficon_small.png') no-repeat left center;
+  padding-left: 20px;
+}
+a[href$=".xlsx"] {
+  background: url('/images/icon_xlsx.png') no-repeat left center;
+  padding-left: 20px;
+}
+a[href$=".zip"] {
+  background: url('/images/zip_icon.png') no-repeat left center;
+  padding-left: 20px;
+}
+
+.icon-chevron-right {
+	float: right;
+}
