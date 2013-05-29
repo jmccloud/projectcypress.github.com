@@ -5587,6 +5587,10 @@ header .navbar .navbar-fixed-top {
 nav-listing nav li.active {
   border-bottom: 2px solid white; }
 
+.nav-listing .nav-tabs li {
+  margin-bottom: -2px;
+  color: black !important; }
+
 .nav-listing .nav .active > a, .navbar .nav .active > a:hover {
   background: #fff;
   border-bottom: none;
@@ -5762,3 +5766,10 @@ div.container {
 
 input {
   text-align: top; }
+
+.btn-large {
+  width: 200px;
+  margin-bottom: 5px; }
+
+.taglines {
+  padding-right: 40px; }
