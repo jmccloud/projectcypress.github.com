@@ -85,10 +85,19 @@
 		<div class="content container" id="index">
 			<a name="content"></a>
 			<div class="row">
-				<div class="span12">
-					<h2>Cypress v2.4 </h2><p class="lead">Release on August 15th, 2013</p>
+				<div class="span3 bs-docs-sidebar">
+			        <ul class="nav nav-list bs-docs-sidenav affix">
+			          <li class="active"><a href="#2.4"><i class="icon-chevron-right"></i>Verion 2.4</a></li>
+			          <li><a href="#2.3"><i class="icon-chevron-right"></i>Verion 2.3</a></li>
+			          <li><a href="#2.2"><i class="icon-chevron-right"></i>Verion 2.2</a></li>
+			        </ul>
+			      </div>
+				<div class="span8">
+					<h2 id="2.4">Cypress v2.4 </h2><p class="lead">Release on August 15th, 2013</p>
+					<hr>
 					<p>Last updated 23 MAY 2013</p>
 					<h3><em>The following features to be introduced in Cypress v2.4:</em></h3>
+
 					<h4>Improved randomization of all Cypress patient records –</h4>
 					<ul>
 						<li>Cypress v2.4 will introduce the shifting of dates on patients added to the set of test data to improve randomization and further prevent gaming of the system.</li>
@@ -100,8 +109,65 @@
 					<h3><em>The following defects will be addressed in Cypress v2.4:</h3></em>
 					<p>(None identified at this time)</p>
 				</div>
-				<div>
-					<h2>Cypress v2.2</h2><p class="lead">Released on April 26th, 2013</p>
+
+				<div class="offset3 span8">
+					<h2 id="2.3">Cypress v2.3</h2>
+					<p class="lead">Release on June 20th, 2013</p>
+					<hr>
+					<p>Last updated 23 MAY 2013</p>
+					<h3>The following features to be introduced in Cypress v2.3:</h3>
+					<h4>Support the annual Eligible Professional clinical quality measure update –  </h4> 
+					<p>
+					Cypress v2.3 will include the updated  specifications introduced in June by the Centers for Medicare & Medicaid Services.  In addition, the Cypress test data was adjusted accordingly to meet basic testing and certification standards.    </p>
+					<h4>QRDA category I XML automated analysis – </h4>
+					<p>Cypress v2.3 will automate the content validation of the QRDA category I test (automatic structural validation will continue as normal in the Cypress software).  </p>
+					<h4>Additional clinical code validation –</h4>
+					<p>Cypress v2.3 will introduce the validation of code selection choices against clinical quality measure value sets.</p>
+				</div>
+				<div class="offset3 span8">
+					<h3>The following defects will be addressed in Cypress v2.3:</h3>
+	
+						<h4>Update the Medicare HIC id entry with a unique value – </h4>
+						<ul>
+							<li><a href="https://cqm-issue-tracker.atlassian.net/browse/CYPRESS-73">Cypress Jira Issue #73 - </a></li>
+							<li><a href="https://cqm-issue-tracker.atlassian.net/browse/CYPRESS-78">Cypress Jira Issue #78 - </a></li>
+							<li><a href="https://cqm-issue-tracker.atlassian.net/browse/CYPRESS-96">Cypress Jira Issue #96 - </a> </li>
+							<li><a href="https://cqm-issue-tracker.atlassian.net/browse/CYPRESS-92">Cypress Jira Issue #92 -</a></li>
+						</ul>
+						<h4>Mismatch of HTML and QRDA files for OB_A and OB_B test patients –</h4>
+					<ul>
+						<li><a href="https://cqm-issue-tracker.atlassian.net/browse/CYPRESS-97">Cypress Jira Issue #97 -</a> </li>
+						<li><a href="https://cqm-issue-tracker.atlassian.net/browse/CYPRESS-98"> Cypress Jira Issue #98 - </a></li>
+					</ul>
+					<h4>Possible resolution of incompatibility between the HQMF and QRDA specifications and the measures definitions –</h4>
+					<ul>
+						<li><a href="https://cqm-issue-tracker.atlassian.net/browse/CYPRESS-86">Cypress Jira Issue #86 -  </a> </li>
+						<li><a href="https://cqm-issue-tracker.atlassian.net/browse/CQM-636">Jira Issue #636 - </a></li>
+					</ul>
+					<h4>CQMIncorrect warning in QRDA Cat I validation –</h4>
+					<ul>
+						<li><a href="https://cqm-issue-tracker.atlassian.net/browse/CYPRESS-72 ">CQM Jira Issue #72 - </a></li>
+					</ul>
+					<h4>Clinical Quality Measure Test Procedure update –</h4>
+					<ul>
+						<li><a href="https://cqm-issue-tracker.atlassian.net/browse/CYPRESS-71">CQM Jira Issue #71 - </a> </li>
+				</ul>
+				<h4>Multiple QRDA issue –</h4>
+					<ul>
+						<li><a href="https://cqm-issue-tracker.atlassian.net/browse/CYPRESS-75 ">CQM Jira Issue #75 - </a></li>
+						<li><a href="https://cqm-issue-tracker.atlassian.net/browse/CYPRESS-102 ">CQM Jira Issue #102 - </a></li>
+					</ul>
+				</div>
+				<div class="offset3 span8">
+					The following Jira issues were identified for resolution outside of the Cypress project:
+					Schematron issues submitted to HL7
+
+						CQM Jira Issue #100 - https://cqm-issue-tracker.atlassian.net/browse/CYPRESS-100 
+				</div>
+				<div class="offset3 span8">
+					<h2 id="2.2">Cypress v2.2</h2><p class="lead">Released on April 26th, 2013</p>
+					<p>Last updated 23 MAY 2013</p>
+					<hr>
 					<h3><em>The following features were introduced in Cypress v2.2:</em></h3>
 					<h4>Updated the Quality Measure Engine to support calculation of supplemental data elements</h4>
 					<h4>Updated the patient test data – see below</h4>
@@ -142,7 +208,7 @@
 						<li><a href="https://cqm-issue-tracker.atlassian.net/browse/CYPRESS-58">Cypress Jira Issue 58 -</a></li>
 					</ul>
 				</div>
-				<div>
+				<div class="offset3 span8">
 					<h3>The following defects were addressed in Cypress v2.2:</h3>
 					<h4>Fixed issue related to start and end date processing of reporting period for exported Cat I documents</h4>
 					<h4>Updated Length of Stay calculations to fix bug related to LOS <= 24 hours</h4>
