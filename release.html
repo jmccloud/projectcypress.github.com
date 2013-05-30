@@ -12,7 +12,7 @@
 		<link rel="icon" type="image/png" href="images/cypress.png"/>
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	</head>
-	<body data-spy="scroll">
+	<body data-spy="scroll" data-target=".bs-docs-sidebar" data-spy="affix">
 		<a class="screenreader" href="#content">skip navigation</a>
 		<header>
 			<div class="navbar navbar-inverse navbar-static-top">
@@ -63,21 +63,23 @@
 				<div class="container"></div>
 			</div>
 			<div class="container">
-				<div class="nav-listing row">
-					<a class="btn btn-navbar collapsed" data-toggle="collapse" data-target=".nav-collapse">
-						<span class="icon-bar"></span>
-						<span class="icon-bar"></span>
-						<span class="icon-bar"></span>
-					</a>
-					<div class="nav-collapse collapse">
-						<ul class="span12 nav nav-tabs">
-							<li><a href="index.html" id="home">Home</a></li>
-							<li><a href="about.html">About</a></li>
-							<li><a href="resources.html">Resources</a></li>
-							<li><a href="timeline.html">Timeline</a></li>
-							<li class="active"><a href="Release.html">Release Notes</a></li>
-							<li><a href="faq.html">FAQ</a></li>
-						</ul>
+				<div class="row">
+					<div class="nav-listing row">
+						<a class="btn btn-navbar collapsed" data-toggle="collapse" data-target=".nav-collapse">
+							<span class="icon-bar"></span>
+							<span class="icon-bar"></span>
+							<span class="icon-bar"></span>
+						</a>
+						<div class="nav-collapse collapse">
+							<ul class="span12 nav nav-tabs">
+								<li><a href="index.html" id="home">Home</a></li>
+								<li><a href="about.html">About</a></li>
+								<li><a href="resources.html">Resources</a></li>
+								<li><a href="timeline.html">Timeline</a></li>
+								<li class="active"><a href="Release.html">Release Notes</a></li>
+								<li><a href="faq.html">FAQ</a></li>
+							</ul>
+						</div>
 					</div>
 				</div>
 			</div>
@@ -85,14 +87,16 @@
 		<div class="content container" id="index">
 			<a name="content"></a>
 			<div class="row">
-				<div class="span2 bs-docs-sidebar">
-			        <ul class="nav nav-list bs-docs-sidenav affix">
-			          <li class="active"><a href="#2.4"><i class="icon-chevron-right"></i>Verion 2.4</a></li>
-			          <li><a href="#2.3"><i class="icon-chevron-right"></i>Verion 2.3</a></li>
-			          <li><a href="#2.2"><i class="icon-chevron-right"></i>Verion 2.2</a></li>
-			        </ul>
+				<div class="span3 bs-docs-sidebar">
+					<div class="row">
+				        <ul class="span2 nav nav-list bs-docs-sidenav affix">
+				          <li><a class="active" href="#2.4"><i class="icon-chevron-right"></i>Verion 2.4</a></li>
+				          <li><a href="#2.3"><i class="icon-chevron-right"></i>Verion 2.3</a></li>
+				          <li><a href="#2.2"><i class="icon-chevron-right"></i>Verion 2.2</a></li>
+				        </ul>
+				    </div>
 			    </div>
-				<div class="span10">
+				<div class="span9">
 					<h2 id="2.4">Cypress v2.4 </h2><p class="lead">Release on August 15th, 2013</p>
 					<hr>
 					<p>Last updated 23 MAY 2013</p>
@@ -279,7 +283,7 @@
 						<p><a href="http://www.hhs.gov/Privacy.html">Privacy Policy</a> <a href="http://www.hhs.gov/Disclaimer.html">Disclaimer</a></p>
 					</div>
 					<div class="span4">
-						<p>Page Last Revised: May 23, 2013</p>
+						<p>Page Last Revised: May 28, 2013</p>
 					</div>
 				</div>
 			</div>
