@@ -1,5 +1,5 @@
 <!doctype html>
-<meta charset="UTF-8" />
+<meta charset="UTF-8">
 <html>
 	<head>
 		<title>Cypress - Release Notes</title>
@@ -12,7 +12,7 @@
 		<link rel="icon" type="image/png" href="images/cypress.png"/>
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	</head>
-	<body data-spy="scroll" data-target=".bs-docs-sidebar">
+	<body data-spy="scroll" data-target="#navbarbox">
 		<a class="screenreader" href="#content">skip navigation</a>
 		<header>
 			<div class="navbar navbar-inverse navbar-static-top">
@@ -63,10 +63,10 @@
 				<div class="container"></div>
 			</div>
 			<div class="container">
-				<div class="row">
+				 <div class="row">
 					<div class="nav-listing row">
-						<a class="btn btn-navbar collapsed" data-toggle="collapse" data-target=".nav-collapse">
-							<span class="icon-bar"></span>
+						<a  class="btn btn-navbar collapsed" data-toggle="collapse" data-target=".nav-collapse">
+	 						<span class="icon-bar"></span>
 							<span class="icon-bar"></span>
 							<span class="icon-bar"></span>
 						</a>
@@ -84,192 +84,301 @@
 				</div>
 			</div>
 		</header>
-		<div class="content container" id="index">
-			<a name="content"></a>
+		<div class="container content" id="contact">
 			<div class="row">
-				<div class="span3 bs-docs-sidebar">
-			        <ul class="nav nav-list bs-docs-sidenav affix">	
-						<li><a href="#2.4"><i class="icon-chevron-right"></i>Verion 2.4</a></li>
-						<li><a href="#2.3"><i class="icon-chevron-right"></i>Verion 2.3</a></li>
-						<li><a href="#2.2"><i class="icon-chevron-right"></i>Verion 2.2</a></li>
-				    </ul>
+				<a name="content navbar-box"></a>
+			    <div class="span12">
+			      	<div id="navbarbox" class="navbar navbar-static">
+		              <div class="navbar-inner">
+		                <div class="container" style="width: auto;">
+		                  <a class="brand" href="#">Cypress Version</a>
+		                  <ul class="nav">
+		                  	<li class="active"><a href="#"><strong>2.2 </strong>Current Version</a></li>
+		                    <li class=""><a href="#2.3"><strong>2.3 </strong> <i>June 20th Release</i></a></li>
+		                    <li class=""><a href="#2.4"><strong>2.4</strong> <i>August 15th Release</i></a></li>
+		                    <li><a href="#TBD"><strong>TBD</strong></a></li>
+		                  </ul>
+		                </div>
+		              </div>
+		            </div>
 			    </div>
-				<div class="span9">
-					<h2 id="2.4">Cypress v2.4 </h2><p class="lead">Release on August 15th, 2013</p>
-					<hr>
-					<p>Last updated 23 MAY 2013</p>
-					<h3><em>The following features to be introduced in Cypress v2.4:</em></h3>
-
-					<h4>Improved randomization of all Cypress patient records –</h4>
-					<ul>
-						<li>Cypress v2.4 will introduce the shifting of dates on patients added to the set of test data to improve randomization and further prevent gaming of the system.</li>
-					</ul>
-					<h4>Limiting HTML test files to clinical quality measure certifying data (aka “HTML Scoop and Filter”) –</h4>
-					<ul>
-						<li>When testing with Cypress v2.4, the HTML view of the patient data will include data only for the clinical quality measures that are being tested and certified.  No extraneous data will be present. </li>
-					</ul>
-					<h3><em>The following defects will be addressed in Cypress v2.4:</h3></em>
-					<p>(None identified at this time)</p>
-					<h2 id="2.3">Cypress v2.3</h2>
-					<p class="lead">Release on June 20th, 2013</p>
-					<hr>
-					<p>Last updated 23 MAY 2013</p>
-					<h3>The following features to be introduced in Cypress v2.3:</h3>
-					<h4>Support the annual Eligible Professional clinical quality measure update –  </h4> 
-					<p>
-					Cypress v2.3 will include the updated  specifications introduced in June by the Centers for Medicare & Medicaid Services.  In addition, the Cypress test data was adjusted accordingly to meet basic testing and certification standards.    </p>
-					<h4>QRDA category I XML automated analysis – </h4>
-					<p>Cypress v2.3 will automate the content validation of the QRDA category I test (automatic structural validation will continue as normal in the Cypress software).  </p>
-					<h4>Additional clinical code validation –</h4>
-					<p>Cypress v2.3 will introduce the validation of code selection choices against clinical quality measure value sets.</p>
-					<h3>The following defects will be addressed in Cypress v2.3:</h3>
-	
-						<h4>Update the Medicare HIC id entry with a unique value – </h4>
+				<div class="span12">
+						<h1 id="2.2">Cypress v2.2</h1><p class="lead">Current Version</p><p>Released on April 26th, 2013</p>
+						<hr>
+				</div>
+			</div>
+			<div class="row">
+				<div class="span4 release" id="2.2features" title data-original-title>
+					<div class="inner">
+						<h2>Features Added</h2>
+						<p class="lead">Updated the Quality Measure Engine to support calculation of supplemental data elements</p>
+						<p>Updated the patient test data – see below</p>
+						<p>Updated the QRDA Category I language code</p>
 						<ul>
-							<li><a href="https://cqm-issue-tracker.atlassian.net/browse/CYPRESS-73">Cypress Jira Issue #73 - </a></li>
-							<li><a href="https://cqm-issue-tracker.atlassian.net/browse/CYPRESS-78">Cypress Jira Issue #78 - </a></li>
-							<li><a href="https://cqm-issue-tracker.atlassian.net/browse/CYPRESS-96">Cypress Jira Issue #96 - </a> </li>
-							<li><a href="https://cqm-issue-tracker.atlassian.net/browse/CYPRESS-92">Cypress Jira Issue #92 -</a></li>
+							<li><a href="https://cqm-issue-tracker.atlassian.net/browse/CYPRESS-53">Cypress Jira Issue 53 -</a></li>
 						</ul>
-						<h4>Mismatch of HTML and QRDA files for OB_A and OB_B test patients –</h4>
-					<ul>
-						<li><a href="https://cqm-issue-tracker.atlassian.net/browse/CYPRESS-97">Cypress Jira Issue #97 -</a> </li>
-						<li><a href="https://cqm-issue-tracker.atlassian.net/browse/CYPRESS-98"> Cypress Jira Issue #98 - </a></li>
-					</ul>
-					<h4>Possible resolution of incompatibility between the HQMF and QRDA specifications and the measures definitions –</h4>
-					<ul>
-						<li><a href="https://cqm-issue-tracker.atlassian.net/browse/CYPRESS-86">Cypress Jira Issue #86 -  </a> </li>
-						<li><a href="https://cqm-issue-tracker.atlassian.net/browse/CQM-636">Jira Issue #636 - </a></li>
-					</ul>
-					<h4>CQMIncorrect warning in QRDA Cat I validation –</h4>
-					<ul>
-						<li><a href="https://cqm-issue-tracker.atlassian.net/browse/CYPRESS-72 ">CQM Jira Issue #72 - </a></li>
-					</ul>
-					<h4>Clinical Quality Measure Test Procedure update –</h4>
-					<ul>
-						<li><a href="https://cqm-issue-tracker.atlassian.net/browse/CYPRESS-71">CQM Jira Issue #71 - </a> </li>
-					</ul>
-					<h4>Multiple QRDA issue –</h4>
-					<ul>
-						<li><a href="https://cqm-issue-tracker.atlassian.net/browse/CYPRESS-75 ">CQM Jira Issue #75 - </a></li>
-						<li><a href="https://cqm-issue-tracker.atlassian.net/browse/CYPRESS-102 ">CQM Jira Issue #102 - </a></li>
-					</ul>
-					The following Jira issues were identified for resolution outside of the Cypress project:
-					Schematron issues submitted to HL7
+						<p>Updated the measure bundle with the annual release of Eligible Hospital measures on April 1, 2013</p>
+						<ul>
+							<li><a href="https://cqm-issue-tracker.atlassian.net/browse/CYPRESS-39">Cypress Jira Issue 39 - </a></li>
+						</ul>
+						<p>Updated the Valuesets based on requirements from latest measures</p>
+						<ul>
+							<li><a href="https://cqm-issue-tracker.atlassian.net/browse/CYPRESS-20">Cypress Jira Issue 20 -</a></li> 
+							<li><a href="https://cqm-issue-tracker.atlassian.net/browse/CYPRESS-21">Cypress Jira Issue 21 -</a> </li> 
+							<li><a href="https://cqm-issue-tracker.atlassian.net/browse/CYPRESS-23">Cypress Jira Issue 23 - </a></li>
+						</ul>
+						<p>Updated the measure logic to latest implementation guidance for Denominator Exclusions, (are now left in the DENOM)</p>
+						<ul>
+							<li><a href="https://cqm-issue-tracker.atlassian.net/browse/CYPRESS-48">Cypress Jira Issue 48 -</a></li>
+						</ul>
+						<p>Removed the QRDA Cat I test patient generation and the ability to create QRDA Category I tests from the Add Test Wizard</p>
+						<ul>
+							<li><a href="https://cqm-issue-tracker.atlassian.net/browse/CYPRESS-66">Cypress Jira Issue 66 -</a></li>
+							<li><a href="https://cqm-issue-tracker.atlassian.net/browse/CYPRESS-47">Cypress Jira Issue 47 -</a></li>
+						</ul>
+						<p>Added the ability to Generate QRDA Category I tests from EP/EH calculations tests</p>
+						<p>Updated the generation of Category I tests based on individual measures</p>
+						<p>Updated QRDA Category I tests to accept a zip file of QRDA Cat I documents for testing</p>
+						<p>Added Multi File reporting views for QRDA Category I tests</p>
+						<p>Updated QRDA Cat I tests to test for patient names</p>
+						<p>Added initial check for too much data in Cat I tests</p>
+						<p>Removed QRDA Cat I measure specific schematron rules </p>
+						<p>Updated QRDA Category I schematron Rules to latest available from HL7 DSTU</p>
+						<ul>
+							<li><a href="https://cqm-issue-tracker.atlassian.net/browse/CYPRESS-15">Cypress Jira Issue 15 -</a></li>
+							<li><a href="https://cqm-issue-tracker.atlassian.net/browse/CYPRESS-49 ">Cypress Jira Issue 49 -</a></li>
+							<li><a href="https://cqm-issue-tracker.atlassian.net/browse/CYPRESS-58">Cypress Jira Issue 58 -</a></li>
+						</ul>
+					</div>
+				</div>
 
-						CQM Jira Issue #100 - https://cqm-issue-tracker.atlassian.net/browse/CYPRESS-100 
-					<h2 id="2.2">Cypress v2.2</h2><p class="lead">Released on April 26th, 2013</p>
-					<p>Last updated 23 MAY 2013</p>
+				<div class="span4 release" id="2.2defects" title data-original-title>
+					<div class="inner">
+						<h2>Defects Addressed</h2>
+						
+						<p class="lead">Fixed issue related to start and end date processing of reporting period for exported Cat I documents</p>
+						<p>Updated Length of Stay calculations to fix bug related to LOS &#8804; 24 hours</p>
+
+						<p>Fixed issue related to dates not being properly formatted in some portions of templates 
+						<ul>
+							<li>2.16.840.1.113883.10.20.24.3.40</li>
+							<li>2.16.840.1.113883.10.20.24.3.46</li>
+							<li>2.16.840.1.113883.10.20.24.3.62</li>
+
+							<li><p><a href="https://cqm-issue-tracker.atlassian.net/browse/CYPRESS-22">Cypress Jira Issue 22 - </a></p></li>
+						</ul>
+						<p>Fixed issue related to nullFlavored value elements not having an xsi:type, nullFlaovored values are now xsi:type="CD" in generic value template</p>
+						<p>Fixed issue with value element for values of string type being reported as xsi:type="INT", are now xsi:type="ST" in generic value template</p>
+						<p>Fixed issue related to stdc:dischargeCode being in the wrong location of  template 2.16.840.1.113883.10.20.24.3.23</p>
+						<p>Fixed issue with routeCode having an invalid empty codeSystem attribute in generic _medication_details template</p>
+						<p>Fixed issue with targetSiteCode having an invalid empty codeSystem attribute for template 2.16.840.1.113883.10.20.24.3.7</p>
+						<p>Fixed issues related to effectiveTime being in the  wrong location in template 2.16.840.1.113883.10.20.24.3.31</p>
+						<p>Removed extra text element from template 2.16.840.1.113883.10.20.24.3.46
+						Removed duplicated data entries from patient records</p>
+						<ul>
+							<li><a href="https://cqm-issue-tracker.atlassian.net/browse/CYPRESS-26">Cypress Jira Issue 26 - </a></li>
+							<li><a href="https://cqm-issue-tracker.atlassian.net/browse/CYPRESS-31">Cypress Jira Issue 31 - </a></li> 
+							<li><a href="https://cqm-issue-tracker.atlassian.net/browse/CYPRESS-43">Cypress Jira Issue 43 - </a></li>
+						</ul> 
+						<p>Fixed Episode of Care logic that incorrectly handled measures that had multiple potential episodes of care joined by a disjunction (effected measures 1365 and 0140)</p>
+						<p>Fixed alignment of the date/times in “Fields” column with “Time” column</p>
+						<ul>
+							<li><a href="https://cqm-issue-tracker.atlassian.net/browse/CYPRESS-29">Cypress Jira Issue 29 - </a></li>
+							<li><a href="https://cqm-issue-tracker.atlassian.net/browse/CYPRESS-37">Cypress Jira Issue 37 -</a></li>
+						</ul>
+					</div>
+				</div>
+				<div class="span4 release" id="2.2test" title data-original-title>
+					<div class="inner">
+						<h2>Test Deck Updates</h2>
+						<p class="lead">In Cypress 2.1 a bug was introduced in the processing  order of  Denominators and Exclusions,  which has been resolved in this release.  As a result of this modification the following changes have been observed in the measure population calculations.</p>
+						<p>NQF 0371:</p>
+						<ul>
+							<li>A, CAP_ADULT - drops from the numerator and goes to the Exclusions</li>
+						</ul>
+						<p>NQF 0372:</p>
+						<ul>
+							<li>A, AMI_ADULT - drops from denominator and exclusions</li>
+							<li>B, AMI_ADULT - drops from denominator and exclusions</li>
+							<li>B, SCIP_ADULT - drops from denominator and exclusions</li>
+							<li>B, STROKE_ADULT - drops from denominator and exclusions</li>
+							<li>C, AMI_ADULT - drops from denominator and exclusions</li>
+							<li>C, VTE_ADULT - drops from denominator and exclusions</li>
+							<li>D, AMI_ADULT - drops from denominator and exclusions</li>
+						</ul>
+						<p>Cholesterol Screening Risk (all populations):</p>
+						<ul>
+							<li>B, Pregnancy_Adult - drops from denominator and exclusions</li>
+						</ul>
+						<p>Fasting LDL Test (high risk and moderate risk):</p>
+						<ul>
+							<li>B, Pregnancy_Adult - drops from denominator and exclusions</li>
+						</ul>
+						<p>The following data element changes have been made to the EH patient test deck records:</p>
+						<ul>
+							<li><p>AMI_ADULT A</p>
+								<ul>
+									<li><p>Diagnostic Study, Result: Hospital Measures Ecg becomes Diagnostic Study, Result: Hospital Measures Ecg impression</p>
+									</li>
+									<li>Test result goes from "Hospital Measures-ST-segment elevation" to "Hospital Measures-Acute or Evolving Mi"</li>
+								</ul>
+							</li>
+							<li><p>AMI_ADULT B</p>
+								<ul>
+									<li><p>Diagnostic Study, Result: Hospital Measures Ecg becomes Diagnostic Study, Result: Hospital Measures Ecg impression</p></li>
+									<li><p>	test result goes from "Hospital Measures-ST-segment elevation" to "Hospital Measures-Acute or Evolving Mi"</p>
+									</li>
+								</ul>
+							</li>
+							<li><p>AMI_ADULT C</p>
+								<ul>
+									<li><p>Diagnostic Study, Result: Hospital Measures Ecg becomes Diagnostic Study, Result: Hospital Measures Ecg impression</p></li>
+									<li><p>test result goes from "Hospital Measures-ST-segment elevation" to "Hospital Measures-Acute or Evolving Mi"</p></li>
+								</ul>
+							</li>
+							<li><p>AMI_ADULT D</p>
+								<ul>
+									<li><p>Diagnostic Study, Result: Hospital Measures Ecg becomes Diagnostic Study, Result: Hospital Measures Ecg impression</p></li>
+									<li><p>test result goes from "Hospital Measures-ST-segment elevation" to "Hospital Measures-Acute or Evolving Mi"</p></li>
+								</ul>
+							</li>
+							<li><p>OB A</p>
+								<ul>
+									<li><p>Diagnostic Study, Performed: Vte Diagnostic Test becomes Diagnostic Study, Result</p>
+									</li>
+								</ul>
+							</li>
+							<li><p>OB B</p>
+								<ul>
+									<li><p>Diagnostic Study, Performed: Vte Diagnostic Test becomes Diagnostic Study, Result</p></li>
+									<li>Diagnosis, Active: Normal Delivery And Other Indications For Care (Dropped from measure)</p></li>
+								</ul>
+							</li>
+							<li><p>CAP_ADULT A</p>
+								<ul>
+									<li><p>Encounter, Performed: ICU Admission or Transfer - end date shifted by 1 day to make length of stay > 1 day</p></li>
+								</ul>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+			<div class="row">
+				<div class="span12">
+					<h1 id="2.3">Cypress v2.3</h1>
+					<p class="lead">Current Build</p><p>To be Released on June 20th, 2013</p>
 					<hr>
-					<h3><em>The following features were introduced in Cypress v2.2:</em></h3>
-					<h4>Updated the Quality Measure Engine to support calculation of supplemental data elements</h4>
-					<h4>Updated the patient test data – see below</h4>
-					<h4>Updated the QRDA Category I language code</h4>
-					<ul>
-						<li><a href="https://cqm-issue-tracker.atlassian.net/browse/CYPRESS-53">Cypress Jira Issue 53 -</a></li>
-					</ul>
-					<h4>Updated the measure bundle with the annual release of Eligible Hospital measures on April 1, 2013</h4>
-					<ul>
-						<li><a href="https://cqm-issue-tracker.atlassian.net/browse/CYPRESS-39">Cypress Jira Issue 39 - </a></li>
-					</ul>
-					<h4>Updated the Valuesets based on requirements from latest measures</h4>
-					<ul>
-						<li><a href="https://cqm-issue-tracker.atlassian.net/browse/CYPRESS-20">Cypress Jira Issue 20 -</a></li> 
-						<li><a href="https://cqm-issue-tracker.atlassian.net/browse/CYPRESS-21">Cypress Jira Issue 21 -</a> </li> 
-						<li><a href="https://cqm-issue-tracker.atlassian.net/browse/CYPRESS-23">Cypress Jira Issue 23 - </a></li>
-					</ul>
-					<h4>Updated the measure logic to latest implementation guidance for Denominator Exclusions, (are now left in the DENOM)</h4>
-					<ul>
-						<li><a href="https://cqm-issue-tracker.atlassian.net/browse/CYPRESS-48">Cypress Jira Issue 48 -</a></li>
-					</ul>
-					<h4>Removed the QRDA Cat I test patient generation and the ability to create QRDA Category I tests from the Add Test Wizard</h4>
-					<ul>
-						<li><a href="https://cqm-issue-tracker.atlassian.net/browse/CYPRESS-66">Cypress Jira Issue 66 -</a></li>
-						<li><a href="https://cqm-issue-tracker.atlassian.net/browse/CYPRESS-47">Cypress Jira Issue 47 -</a></li>
-					</ul>
-					<h4>Added the ability to Generate QRDA Category I tests from EP/EH calculations tests</h4>
-					<h4>Updated the generation of Category I tests based on individual measures</h4>
-					<h4>Updated QRDA Category I tests to accept a zip file of QRDA Cat I documents for testing</h4>
-					<h4>Added Multi File reporting views for QRDA Category I tests</h4>
-					<h4>Updated QRDA Cat I tests to test for patient names</h4>
-					<h4>Added initial check for too much data in Cat I tests</h4>
-					<h4>Removed QRDA Cat I measure specific schematron rules </h4>
-					<h4>Updated QRDA Category I schematron Rules to latest available from HL7 DSTU</h4>
-					<ul>
-						<li><a href="https://cqm-issue-tracker.atlassian.net/browse/CYPRESS-15">Cypress Jira Issue 15 -</a></li>
-						<li><a href="https://cqm-issue-tracker.atlassian.net/browse/CYPRESS-49 ">Cypress Jira Issue 49 -</a></li>
-						<li><a href="https://cqm-issue-tracker.atlassian.net/browse/CYPRESS-58">Cypress Jira Issue 58 -</a></li>
-					</ul>
-					<h3>The following defects were addressed in Cypress v2.2:</h3>
-					<h4>Fixed issue related to start and end date processing of reporting period for exported Cat I documents</h4>
-					<h4>Updated Length of Stay calculations to fix bug related to LOS <= 24 hours</h4>
-					<h4>Fixed issue related to dates not being properly formatted in some portions of templates 2.16.840.1.113883.10.20.24.3.40 , 2.16.840.1.113883.10.20.24.3.46, and 2.16.840.1.113883.10.20.24.3.62</h4>
-					<ul>
-						<li><a href="https://cqm-issue-tracker.atlassian.net/browse/CYPRESS-22">Cypress Jira Issue 22 - </a></li>
-					</ul>
-					<h4>Fixed issue related to nullFlavored value elements not having an xsi:type, nullFlaovored values are now xsi:type="CD" in generic value template</h4>
-					<h4>Fixed issue with value element for values of string type being reported as xsi:type="INT", are now xsi:type="ST" in generic value template</h4>
-					<h4>Fixed issue related to stdc:dischargeCode being in the wrong location of  template 2.16.840.1.113883.10.20.24.3.23</h4>
-					<h4>Fixed issue with routeCode having an invalid empty codeSystem attribute in generic _medication_details template</h4>
-					<h4>Fixed issue with targetSiteCode having an invalid empty codeSystem attribute for template 2.16.840.1.113883.10.20.24.3.7</h4>
-					<h4>Fixed issues related to effectiveTime being in the  wrong location in template 2.16.840.1.113883.10.20.24.3.31</h4>
-					<h4>Removed extra text element from template 2.16.840.1.113883.10.20.24.3.46
-					Removed duplicated data entries from patient records</h4>
-					<ul>
-						<li><a href="https://cqm-issue-tracker.atlassian.net/browse/CYPRESS-26">Cypress Jira Issue 26 - </a></li>
-						<li><a href="https://cqm-issue-tracker.atlassian.net/browse/CYPRESS-31">Cypress Jira Issue 31 - </a></li> 
-						<li><a href="https://cqm-issue-tracker.atlassian.net/browse/CYPRESS-43">Cypress Jira Issue 43 - </a></li>
-					</ul> 
-					<p>Fixed Episode of Care logic that incorrectly handled measures that had multiple potential episodes of care joined by a disjunction (effected measures 1365 and 0140)</p>
-					<p>Fixed alignment of the date/times in “Fields” column with “Time” column</p>
-					<ul>
-						<li><a href="https://cqm-issue-tracker.atlassian.net/browse/CYPRESS-29">Cypress Jira Issue 29 - </a></li>
-						<li><a href="https://cqm-issue-tracker.atlassian.net/browse/CYPRESS-37">Cypress Jira Issue 37 -</a></li>
-					</ul>
-					<h3>The following updates to the Test Decks were addressed in Cypress v2.2:</h3>
-					<p>In Cypress 2.1 a bug was introduced in the processing  order of  Denominators and Exclusions,  which has been resolved in this release.  As a result of this modification the following changes have been observed in the measure population calculations.</p>
-					<h4>NQF 0371:</h4>
-					<ul>
-						<li>A, CAP_ADULT - drops from the numerator and goes to the Exclusions</li>
-					</ul>
-					<h4>NQF 0372:</h4>
-					<ul>
-						<li>A, AMI_ADULT - drops from denominator and exclusions</li>
-						<li>B, AMI_ADULT - drops from denominator and exclusions</li>
-						<li>B, SCIP_ADULT - drops from denominator and exclusions</li>
-						<li>B, STROKE_ADULT - drops from denominator and exclusions</li>
-						<li>C, AMI_ADULT - drops from denominator and exclusions</li>
-						<li>C, VTE_ADULT - drops from denominator and exclusions</li>
-						<li>D, AMI_ADULT - drops from denominator and exclusions</li>
-					</ul>
-					<h4>Cholesterol Screening Risk (all populations):</h4>
-					<ul>
-						<li>B, Pregnancy_Adult - drops from denominator and exclusions</li>
-					</ul>
-					<h4>Fasting LDL Test (high risk and moderate risk):</h4>
-					<ul>
-						<li>B, Pregnancy_Adult - drops from denominator and exclusions</li>
-					</ul>
-					<h3>The following data element changes have been made to the EH patient test deck records:</h3>
-					<h4>AMI_ADULT A</h4>
-					<p>Diagnostic Study, Result: Hospital Measures Ecg becomes Diagnostic Study, Result: Hospital Measures Ecg impression</p>
-					<p>test result goes from "Hospital Measures-ST-segment elevation" to "Hospital Measures-Acute or Evolving Mi"</p>
-					<h4>AMI_ADULT B</h4>
-					<p>Diagnostic Study, Result: Hospital Measures Ecg becomes Diagnostic Study, Result: Hospital Measures Ecg impression</p>
-					<p>	test result goes from "Hospital Measures-ST-segment elevation" to "Hospital Measures-Acute or Evolving Mi"</p>
-					<h4>AMI_ADULT C</h4>
-					<p>Diagnostic Study, Result: Hospital Measures Ecg becomes Diagnostic Study, Result: Hospital Measures Ecg impression</p>
-					<p>test result goes from "Hospital Measures-ST-segment elevation" to "Hospital Measures-Acute or Evolving Mi"</p>
-					<h4>AMI_ADULT D</h4>
-					<p>Diagnostic Study, Result: Hospital Measures Ecg becomes Diagnostic Study, Result: Hospital Measures Ecg impression</p>
-					<p>test result goes from "Hospital Measures-ST-segment elevation" to "Hospital Measures-Acute or Evolving Mi"</p>
-					<h4>OB A</h4>
-					<p>Diagnostic Study, Performed: Vte Diagnostic Test becomes Diagnostic Study, Result</p>
-					<h4>OB B</h4>
-					<p>Diagnostic Study, Performed: Vte Diagnostic Test becomes Diagnostic Study, Result
-					Diagnosis, Active: Normal Delivery And Other Indications For Care (Dropped from measure)</p>
-					<h4>CAP_ADULT A</h4>
-					<p>Encounter, Performed: ICU Admission or Transfer - end date shifted by 1 day to make length of stay > 1 day</p>
+				</div>
+			</div>
+			<div class="row">
+					<div class="span6 release" id="2.2features">
+						<div class="inner">
+							<h2>Features Added</h2>
+							<p class="lead">Support the annual Eligible Professional clinical quality measure update –  </p> 
+							<ul>
+								<li><p>Cypress v2.3 will include the updated  specifications introduced in June by the Centers for Medicare & Medicaid Services.  In addition, the Cypress test data was adjusted accordingly to meet basic testing and certification standards.</p></li>
+								<li><p>QRDA category I XML automated analysis – </p>
+								<p>Cypress v2.3 will automate the content validation of the QRDA category I test (automatic structural validation will continue as normal in the Cypress software).  </p></li>
+								<li><p>Additional clinical code validation –</p>
+								<p>Cypress v2.3 will introduce the validation of code selection choices against clinical quality measure value sets.</p></li>
+							</ul>
+						</div>
+					</div>
+					<div class="span6 release" id="2.3defects">
+						<div class="inner">
+							<h2 class="">Defects to be Addressed</h2>
+							<ul>
+								<li><p>Update the Medicare HIC id entry with a unique value – </p>
+									<ul>
+										<li><a href="https://cqm-issue-tracker.atlassian.net/browse/CYPRESS-73">Cypress Jira Issue #73 - </a></li>
+										<li><a href="https://cqm-issue-tracker.atlassian.net/browse/CYPRESS-78">Cypress Jira Issue #78 - </a></li>
+										<li><a href="https://cqm-issue-tracker.atlassian.net/browse/CYPRESS-96">Cypress Jira Issue #96 - </a> </li>
+										<li><a href="https://cqm-issue-tracker.atlassian.net/browse/CYPRESS-92">Cypress Jira Issue #92 -</a></li>
+									</ul>
+								</li>
+								<li><p>Mismatch of HTML and QRDA files for OB_A and OB_B test patients –</p>
+									<ul>
+										<li><a href="https://cqm-issue-tracker.atlassian.net/browse/CYPRESS-97">Cypress Jira Issue #97 -</a> </li>
+										<li><a href="https://cqm-issue-tracker.atlassian.net/browse/CYPRESS-98"> Cypress Jira Issue #98 - </a></li>
+									</ul>
+								</li>
+								<li><p>Incorrect warning in QRDA Cat I validation –</p>
+									<ul>
+										<li><a href="https://cqm-issue-tracker.atlassian.net/browse/CYPRESS-72 ">CQM Jira Issue #72 - </a></li>
+									</ul>
+								</li>
+								<li><p>Clinical Quality Measure Test Procedure update –</p>
+									<ul>
+										<li><a href="https://cqm-issue-tracker.atlassian.net/browse/CYPRESS-71">CQM Jira Issue #71 - </a> </li>
+									</ul>
+								</li>
+							</ul>
+						</div>
+					</div>
+			</div>
+			<div class="row">
+				<div class="span12">
+					<h2 id="2.4">Cypress v2.4 </h2>
+					<p class="lead">Upcoming Build</p><p>To be Released on August 15th, 2013</p>
+					<hr>
+
+					<div class="row">
+						<div class="span6 release" id="2.4features">
+							<div class="inner">
+								<h2>Features Added</h2>
+								<ul>
+									<li>
+										<p>Improved randomization of all Cypress patient records –</p>
+										<ul>
+											<li>Cypress v2.4 will introduce the shifting of dates on patients added to the set of test data to improve randomization and further prevent gaming of the system.</li>
+										</ul>
+									</li>
+									<li>
+										<p>Limiting HTML test files to clinical quality measure certifying data (aka “HTML Scoop and Filter”) –</p>
+										<ul>
+											<li>When testing with Cypress v2.4, the HTML view of the patient data will include data only for the clinical quality measures that are being tested and certified.  No extraneous data will be present. </li>
+										</ul>
+									</li>
+								</ul>
+							</div>
+						</div>
+						<div class="span6 release">
+							<div class="inner">
+								<h2>Defects to be Addressed</h2>
+								<p class="lead">None identified at this time</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="row">
+				<div class="span12">
+					<h2 id="tbd">TBD</h2>
+					<p class="lead">Upcoming Build</p><p>To be Announced</p>
+					<hr>
+			</div>
+				<div class="span6 release">
+					<div class="inner">
+						<p class="lead">The following issues are being tracked by the Cypress project – with no definitive release date at this time</p>
+						<ul>
+							<li>Schematron issues submitted to HL7
+								<ul>
+									<li>Cypress Jira Issue 100 </li>
+								</ul>
+							</li>
+							<li>Multiple QRDA issue 
+								<ul>
+									<li>Cypress Jira Issue 75 </li>
+									<li>Cypress Jira Issue 102 </li>
+								</ul>
+							<li>Resolution of incompatibility between the HQMF and QRDA specifications and the measures definitions
+								<ul>
+									<li>Cypress Jira Issue 86 </li>
+									<li>Cypress Jira Issue 636 </li>
+								</ul>
+							</li>
+						</ul>
+					</div>
 				</div>
 			</div>
 		</div>
