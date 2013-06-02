@@ -376,5 +376,21 @@ a[href$=".zip"] {
 .icon-chevron-right {
   float: right; }
 
-.bs-docs-sidebar {
-  background: #f2f2f2; }
+.bs-docs-sidebar .bs-docs-sidenav {
+  border: 1px solid #f2f2f2; }
+
+.release {
+  background-color: #f2f2f2;
+  border-radius: 5px; }
+
+.inner {
+  padding: 0 20px; }
+
+.row > [class*="span"]:first-child > .inner {
+  padding: 0 20px; }
+
+.row > [class*="span"]:last-child > .inner {
+  padding-left: 20px; }
+
+.navbar-inner {
+  background-color: #f2f2f2; }
