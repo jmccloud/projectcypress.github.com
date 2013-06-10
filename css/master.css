@@ -394,3 +394,6 @@ a[href$=".zip"] {
 
 .navbar-inner {
   background-color: #f2f2f2; }
+
+.margin {
+  margin-bottom: 20px; }
